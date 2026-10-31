@@ -1,0 +1,531 @@
+[
+  {
+    "id": "vieshow-xinyi",
+    "brand": "威秀",
+    "subBrand": "威秀",
+    "city": "台北",
+    "name": "台北信義威秀影城",
+    "provider": "atmovies",
+    "aliases": [
+      "信義威秀",
+      "威秀信義",
+      "台北信義威秀",
+      "信義威秀影城",
+      "台北信義威秀影城"
+    ],
+    "sourceNames": [
+      "台北信義威秀",
+      "台北信義威秀影城"
+    ],
+    "theaterCode": "t02a01",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02a01/a02/",
+    "bookingUrl": "https://www.vscinemas.com.tw/theater/detail.aspx?id=1"
+  },
+  {
+    "id": "vieshow-songren",
+    "brand": "威秀",
+    "subBrand": "MUVIE",
+    "city": "台北",
+    "name": "MUVIE CINEMAS 台北松仁",
+    "provider": "atmovies",
+    "aliases": [
+      "松仁威秀",
+      "松仁MUVIE",
+      "台北松仁威秀",
+      "松仁威秀影城",
+      "信義A13威秀",
+      "遠百信義A13威秀",
+      "MUVIE CINEMAS台北松仁威秀",
+      "MUVIE CINEMAS 台北松仁",
+      "台北松仁威秀影城",
+      "信義A13威秀影城",
+      "遠百信義A13威秀影城",
+      "MUVIE CINEMAS台北松仁威秀影城"
+    ],
+    "sourceNames": [
+      "MUVIE CINEMAS台北松仁威秀",
+      "MUVIE CINEMAS 台北松仁"
+    ],
+    "theaterCode": "t02a11",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02a11/a02/",
+    "bookingUrl": "https://www.vscinemas.com.tw/theater/detail2.aspx?id=23"
+  },
+  {
+    "id": "vieshow-nangang",
+    "brand": "威秀",
+    "subBrand": "威秀",
+    "city": "台北",
+    "name": "台北南港LaLaport威秀影城",
+    "provider": "atmovies",
+    "aliases": [
+      "南港威秀",
+      "南港LaLaport威秀",
+      "LaLaport威秀",
+      "台北南港LaLaport威秀影城",
+      "台北南港LaLaport威秀",
+      "南港威秀影城",
+      "南港LaLaport威秀影城",
+      "LaLaport威秀影城"
+    ],
+    "sourceNames": [
+      "台北南港LaLaport威秀影城"
+    ],
+    "theaterCode": "t02a12",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02a12/a02/",
+    "bookingUrl": "https://www.vscinemas.com.tw/theater/detail.aspx?id=34"
+  },
+  {
+    "id": "vieshow-qsquare",
+    "brand": "威秀",
+    "subBrand": "威秀",
+    "city": "台北",
+    "name": "台北京站威秀影城",
+    "provider": "atmovies",
+    "aliases": [
+      "京站威秀",
+      "威秀京站",
+      "台北京站威秀",
+      "京站威秀影城",
+      "台北京站威秀影城"
+    ],
+    "sourceNames": [
+      "台北京站威秀",
+      "台北京站威秀影城"
+    ],
+    "theaterCode": "t02b14",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02b14/a02/",
+    "bookingUrl": "https://www.vscinemas.com.tw/theater/detail.aspx?id=2"
+  },
+  {
+    "id": "vieshow-ximen",
+    "brand": "威秀",
+    "subBrand": "威秀",
+    "city": "台北",
+    "name": "台北西門威秀影城",
+    "provider": "atmovies",
+    "aliases": [
+      "西門威秀",
+      "威秀西門",
+      "台北西門威秀影城",
+      "台北西門威秀",
+      "西門威秀影城"
+    ],
+    "sourceNames": [
+      "台北西門威秀影城"
+    ],
+    "theaterCode": "t02b08",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02b08/a02/",
+    "bookingUrl": "https://www.vscinemas.com.tw/theater/detail.aspx?id=31"
+  },
+  {
+    "id": "vieshow-banqiao",
+    "brand": "威秀",
+    "subBrand": "威秀",
+    "city": "新北",
+    "name": "板橋大遠百威秀影城",
+    "provider": "atmovies",
+    "aliases": [
+      "板橋威秀",
+      "板橋大遠百威秀",
+      "大遠百威秀",
+      "板橋大遠百威秀影城",
+      "板橋威秀影城",
+      "大遠百威秀影城"
+    ],
+    "sourceNames": [
+      "板橋大遠百威秀影城"
+    ],
+    "theaterCode": "t02e07",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02e07/a02/",
+    "bookingUrl": "https://www.vscinemas.com.tw/theater/detail.aspx?id=4"
+  },
+  {
+    "id": "vieshow-linkou",
+    "brand": "威秀",
+    "subBrand": "威秀",
+    "city": "新北",
+    "name": "林口MITSUI OUTLET PARK威秀影城",
+    "provider": "atmovies",
+    "aliases": [
+      "林口威秀",
+      "林口三井威秀",
+      "林口三井OUTLET威秀",
+      "林口三井OUTLET威秀影城",
+      "林口MITSUI OUTLET PARK威秀",
+      "林口威秀影城",
+      "林口三井威秀影城",
+      "林口MITSUI OUTLET PARK威秀影城"
+    ],
+    "sourceNames": [
+      "林口三井OUTLET威秀影城",
+      "林口MITSUI OUTLET PARK威秀影城"
+    ],
+    "theaterCode": "t02e12",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02e12/a02/",
+    "bookingUrl": "https://www.vscinemas.com.tw/theater/detail.aspx?id=5"
+  },
+  {
+    "id": "vieshow-zhonghe",
+    "brand": "威秀",
+    "subBrand": "威秀",
+    "city": "新北",
+    "name": "中和環球威秀影城",
+    "provider": "atmovies",
+    "aliases": [
+      "中和威秀",
+      "環球威秀",
+      "中和環球威秀",
+      "中和環球威秀影城",
+      "中和威秀影城",
+      "環球威秀影城"
+    ],
+    "sourceNames": [
+      "中和環球威秀影城"
+    ],
+    "theaterCode": "t02e20",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02e20/a02/",
+    "bookingUrl": "https://www.vscinemas.com.tw/theater/detail.aspx?id=25"
+  },
+  {
+    "id": "vieshow-xindian",
+    "brand": "威秀",
+    "subBrand": "威秀",
+    "city": "新北",
+    "name": "新店裕隆城威秀影城",
+    "provider": "atmovies",
+    "aliases": [
+      "新店威秀",
+      "裕隆城威秀",
+      "新店裕隆城威秀",
+      "新店裕隆城威秀影城",
+      "新店威秀影城",
+      "裕隆城威秀影城"
+    ],
+    "sourceNames": [
+      "新店裕隆城威秀影城"
+    ],
+    "theaterCode": "t02e21",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02e21/a02/",
+    "bookingUrl": "https://www.vscinemas.com.tw/theater/detail.aspx?id=28"
+  },
+  {
+    "id": "vieshow-tonlin",
+    "brand": "威秀",
+    "subBrand": "威秀",
+    "city": "桃園",
+    "name": "桃園統領威秀影城",
+    "provider": "atmovies",
+    "aliases": [
+      "統領威秀",
+      "桃園統領威秀",
+      "桃園統領威秀影城",
+      "統領威秀影城"
+    ],
+    "sourceNames": [
+      "桃園統領威秀影城"
+    ],
+    "theaterCode": "t03308",
+    "areaCode": "a03",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t03308/a03/",
+    "bookingUrl": "https://www.vscinemas.com.tw/theater/detail.aspx?id=20"
+  },
+  {
+    "id": "vieshow-geleven",
+    "brand": "威秀",
+    "subBrand": "威秀",
+    "city": "桃園",
+    "name": "桃園桃知道威秀影城",
+    "provider": "atmovies",
+    "aliases": [
+      "桃知道威秀",
+      "桃園桃知道威秀",
+      "桃園桃知道威秀影城",
+      "桃知道威秀影城"
+    ],
+    "sourceNames": [
+      "桃園桃知道威秀影城"
+    ],
+    "theaterCode": "t03317",
+    "areaCode": "a03",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t03317/a03/",
+    "bookingUrl": "https://www.vscinemas.com.tw/theater/detail.aspx?id=29"
+  },
+  {
+    "id": "vieshow-hsinchu-fe21",
+    "brand": "威秀",
+    "subBrand": "威秀",
+    "city": "新竹",
+    "name": "新竹大遠百威秀影城",
+    "provider": "atmovies",
+    "aliases": [
+      "新竹大遠百威秀",
+      "新竹遠百威秀",
+      "大遠百威秀",
+      "新竹大遠百威秀影城",
+      "新竹遠百威秀影城",
+      "大遠百威秀影城"
+    ],
+    "sourceNames": [
+      "新竹大遠百威秀影城"
+    ],
+    "theaterCode": "t03505",
+    "areaCode": "a35",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t03505/a35/",
+    "bookingUrl": "https://www.vscinemas.com.tw/theater/detail.aspx?id=7"
+  },
+  {
+    "id": "vieshow-bigcity",
+    "brand": "威秀",
+    "subBrand": "威秀",
+    "city": "新竹",
+    "name": "新竹巨城威秀影城",
+    "provider": "atmovies",
+    "aliases": [
+      "巨城威秀",
+      "新竹巨城威秀",
+      "新竹巨城威秀影城",
+      "巨城威秀影城"
+    ],
+    "sourceNames": [
+      "新竹巨城威秀影城"
+    ],
+    "theaterCode": "t03508",
+    "areaCode": "a35",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t03508/a35/",
+    "bookingUrl": "https://www.vscinemas.com.tw/theater/detail.aspx?id=9"
+  },
+  {
+    "id": "vieshow-toufen",
+    "brand": "威秀",
+    "subBrand": "威秀",
+    "city": "苗栗",
+    "name": "頭份尚順威秀影城",
+    "provider": "atmovies",
+    "aliases": [
+      "頭份威秀",
+      "尚順威秀",
+      "苗栗威秀",
+      "頭份尚順威秀影城",
+      "頭份尚順威秀",
+      "頭份威秀影城",
+      "尚順威秀影城",
+      "苗栗威秀影城"
+    ],
+    "sourceNames": [
+      "頭份尚順威秀影城"
+    ],
+    "theaterCode": "t03701",
+    "areaCode": "a37",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t03701/a37/",
+    "bookingUrl": "https://www.vscinemas.com.tw/theater/detail.aspx?id=10"
+  },
+  {
+    "id": "vieshow-tigercity",
+    "brand": "威秀",
+    "subBrand": "MUVIE",
+    "city": "台中",
+    "name": "MUVIE CINEMAS 台中TIGER CITY",
+    "provider": "atmovies",
+    "aliases": [
+      "台中老虎城威秀",
+      "老虎城威秀",
+      "老虎城MUVIE",
+      "台中TIGER CITY威秀",
+      "台中TIGERCITY威秀",
+      "TIGERCITY威秀",
+      "MUVIE CINEMAS 台中TIGER CITY",
+      "台中老虎城威秀影城",
+      "老虎城威秀影城",
+      "台中TIGER CITY威秀影城",
+      "台中TIGERCITY威秀影城",
+      "TIGERCITY威秀影城"
+    ],
+    "sourceNames": [
+      "台中老虎城威秀",
+      "MUVIE CINEMAS 台中TIGER CITY"
+    ],
+    "theaterCode": "t04402",
+    "areaCode": "a04",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t04402/a04/",
+    "bookingUrl": "https://www.vscinemas.com.tw/theater/detail2.aspx?id=12"
+  },
+  {
+    "id": "vieshow-taichung-fe21",
+    "brand": "威秀",
+    "subBrand": "威秀",
+    "city": "台中",
+    "name": "台中大遠百威秀影城",
+    "provider": "atmovies",
+    "aliases": [
+      "台中大遠百威秀",
+      "台中遠百威秀",
+      "大遠百威秀",
+      "台中大遠百威秀影城",
+      "台中遠百威秀影城",
+      "大遠百威秀影城"
+    ],
+    "sourceNames": [
+      "台中大遠百威秀影城"
+    ],
+    "theaterCode": "t04407",
+    "areaCode": "a04",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t04407/a04/",
+    "bookingUrl": "https://www.vscinemas.com.tw/theater/detail.aspx?id=11"
+  },
+  {
+    "id": "vieshow-ifg",
+    "brand": "威秀",
+    "subBrand": "威秀",
+    "city": "台中",
+    "name": "台中iFG 遠雄廣場威秀影城",
+    "provider": "atmovies",
+    "aliases": [
+      "台中IFG威秀",
+      "IFG威秀",
+      "遠雄威秀",
+      "台中遠雄威秀",
+      "台中iFG遠雄廣場威秀影城",
+      "台中iFG 遠雄廣場威秀",
+      "台中IFG威秀影城",
+      "IFG威秀影城",
+      "遠雄威秀影城",
+      "台中遠雄威秀影城",
+      "台中iFG 遠雄廣場威秀影城"
+    ],
+    "sourceNames": [
+      "台中iFG遠雄廣場威秀影城",
+      "台中iFG 遠雄廣場威秀影城"
+    ],
+    "theaterCode": "t04409",
+    "areaCode": "a04",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t04409/a04/",
+    "bookingUrl": "https://www.vscinemas.com.tw/theater/detail.aspx?id=26"
+  },
+  {
+    "id": "vieshow-tainan-fe21",
+    "brand": "威秀",
+    "subBrand": "威秀",
+    "city": "台南",
+    "name": "台南大遠百威秀影城",
+    "provider": "atmovies",
+    "aliases": [
+      "台南大遠百威秀",
+      "台南遠百威秀",
+      "大遠百威秀",
+      "台南大遠百威秀影城",
+      "台南遠百威秀影城",
+      "大遠百威秀影城"
+    ],
+    "sourceNames": [
+      "台南大遠百威秀影城"
+    ],
+    "theaterCode": "t06609",
+    "areaCode": "a06",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t06609/a06/",
+    "bookingUrl": "https://www.vscinemas.com.tw/theater/detail.aspx?id=15"
+  },
+  {
+    "id": "vieshow-tsmall",
+    "brand": "威秀",
+    "subBrand": "威秀",
+    "city": "台南",
+    "name": "台南南紡威秀影城",
+    "provider": "atmovies",
+    "aliases": [
+      "南紡威秀",
+      "台南南紡威秀",
+      "台南南紡威秀影城",
+      "南紡威秀影城"
+    ],
+    "sourceNames": [
+      "台南南紡威秀影城"
+    ],
+    "theaterCode": "t06610",
+    "areaCode": "a06",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t06610/a06/",
+    "bookingUrl": "https://www.vscinemas.com.tw/theater/detail.aspx?id=16"
+  },
+  {
+    "id": "vieshow-focus",
+    "brand": "威秀",
+    "subBrand": "威秀",
+    "city": "台南",
+    "name": "台南FOCUS 威秀影城",
+    "provider": "atmovies",
+    "aliases": [
+      "FOCUS威秀",
+      "台南FOCUS威秀",
+      "台南FOCUS威秀影城",
+      "台南FOCUS 威秀",
+      "FOCUS威秀影城",
+      "台南FOCUS 威秀影城"
+    ],
+    "sourceNames": [
+      "台南FOCUS威秀影城",
+      "台南FOCUS 威秀影城"
+    ],
+    "theaterCode": "t06611",
+    "areaCode": "a06",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t06611/a06/",
+    "bookingUrl": "https://www.vscinemas.com.tw/theater/detail.aspx?id=22"
+  },
+  {
+    "id": "vieshow-kaohsiung-fe21",
+    "brand": "威秀",
+    "subBrand": "威秀",
+    "city": "高雄",
+    "name": "高雄大遠百威秀影城",
+    "provider": "atmovies",
+    "aliases": [
+      "高雄威秀",
+      "高雄大遠百威秀",
+      "高雄遠百威秀",
+      "大遠百威秀",
+      "高雄大遠百威秀影城",
+      "高雄威秀影城",
+      "高雄遠百威秀影城",
+      "大遠百威秀影城"
+    ],
+    "sourceNames": [
+      "高雄大遠百威秀影城"
+    ],
+    "theaterCode": "t07703",
+    "areaCode": "a07",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t07703/a07/",
+    "bookingUrl": "https://www.vscinemas.com.tw/theater/detail.aspx?id=18"
+  },
+  {
+    "id": "vieshow-hualien",
+    "brand": "威秀",
+    "subBrand": "威秀",
+    "city": "花蓮",
+    "name": "花蓮新天堂樂園威秀影城",
+    "provider": "atmovies",
+    "aliases": [
+      "花蓮威秀",
+      "新天堂樂園威秀",
+      "吉安威秀",
+      "花蓮新天堂樂園威秀影城",
+      "花蓮新天堂樂園威秀",
+      "花蓮威秀影城",
+      "新天堂樂園威秀影城",
+      "吉安威秀影城"
+    ],
+    "sourceNames": [
+      "花蓮新天堂樂園威秀影城"
+    ],
+    "theaterCode": "t03803",
+    "areaCode": "a38",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t03803/a38/",
+    "bookingUrl": "https://www.vscinemas.com.tw/theater/detail.aspx?id=21"
+  }
+]

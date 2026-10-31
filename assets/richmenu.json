@@ -1,0 +1,69 @@
+{
+  "size": {
+    "width": 2500,
+    "height": 1686
+  },
+  "selected": true,
+  "name": "Zona Movie 05 — 四格選單",
+  "chatBarText": "電影夥伴選單",
+  "areas": [
+    {
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1250,
+        "height": 843
+      },
+      "action": {
+        "type": "postback",
+        "label": "電影查詢",
+        "data": "menu:movies",
+        "displayText": "電影查詢",
+        "inputOption": "openKeyboard"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1250,
+        "y": 0,
+        "width": 1250,
+        "height": 843
+      },
+      "action": {
+        "type": "uri",
+        "label": "我的票匣",
+        "uri": "https://miniapp.line.me/2012222034-AVyO2nk3"
+      }
+    },
+    {
+      "bounds": {
+        "x": 0,
+        "y": 843,
+        "width": 1250,
+        "height": 843
+      },
+      "action": {
+        "type": "postback",
+        "label": "附近影院",
+        "data": "menu:nearby",
+        "displayText": "附近影院",
+        "inputOption": "closeRichMenu"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1250,
+        "y": 843,
+        "width": 1250,
+        "height": 843
+      },
+      "action": {
+        "type": "postback",
+        "label": "幫我挑電影",
+        "data": "menu:recommend",
+        "displayText": "幫我挑電影",
+        "inputOption": "openKeyboard"
+      }
+    }
+  ]
+}

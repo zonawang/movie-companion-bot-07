@@ -1,0 +1,9 @@
+# Movie-card fallback artwork v1
+
+Generated with the built-in `image_gen` tool, opaque background. This generic cinema illustration is used only when the correct movie poster is unavailable. It is not a poster for a particular film.
+
+Final project asset: `public/assets/poster-fallback-v1.jpg` (768 × 1024 JPEG, approximately 206 KiB). The selected generated PNG was exported at JPEG quality 85 and fit within 1024 pixels for LINE delivery; the illustration content was not changed. The original generated PNG remains in the generation tool's output folder.
+
+## Final generation prompt
+
+Use case: illustration-story. Asset type: a polished reusable portrait fallback cover for a Taiwanese LINE movie companion's movie cards, used only when a real movie poster is unavailable. Create one standalone full-bleed editorial cinema illustration, portrait 3:4 composition, not a UI mockup. Scene: an intimate art-house movie theater just before a screening, empty dark forest-green upholstered seats in the lower foreground, warm ivory light glowing from a simple rectangular cinema screen, subtle soft projection light and restrained terracotta accents. Contemporary illustrated print with tactile paper grain, gentle geometric forms, sophisticated and inviting, calm rather than dramatic. Brand palette already present in the app: deep green #243D34, warm ivory #F6F4ED, sage #E6EADC, subtle burnt terracotta #B85E3F. The composition must remain readable at a small 260-pixel card width, with a clear central focal point, generous quiet areas, crisp shapes, no clutter. It should read as a generic cinema-themed illustration rather than the poster of a specific film. Absolutely no text, typography, letters, numbers, logos, slogans, watermarks, people, identifiable film characters, film titles, collage frames, or surrounding phone/interface. Final image must be ready to use directly as the full cover asset, opaque background.

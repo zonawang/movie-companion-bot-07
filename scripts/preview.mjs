@@ -1,0 +1,11 @@
+import { Store } from '../src/store.mjs';
+import { ShelfAuth } from '../src/shelf-auth.mjs';
+import { ShelfCatalog } from '../src/shelf-catalog.mjs';
+import { TicketShelf } from '../src/shelf.mjs';
+import { createWebhookServer } from '../src/app.mjs';
+const port = Number(process.env.PREVIEW_PORT || 3104);
+const store = new Store();
+const shelf = new TicketShelf({ store, auth: new ShelfAuth({ baseUrl: `http://127.0.0.1:${port}`, secureCookies: false }), catalog: new ShelfCatalog() });
+const server = createWebhookServer({ secret: 'local-preview-only', store, shelf, bot: {}, reply: async () => {} });
+server.listen(port, '127.0.0.1', () => console.log(`示範票匣：http://127.0.0.1:${port}/tickets/?preview=1（虛構資料，重新整理即還原）`));
+for (const signal of ['SIGINT', 'SIGTERM']) process.on(signal, () => server.close(() => { store.close(); process.exit(0); }));

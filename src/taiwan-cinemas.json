@@ -1,0 +1,1955 @@
+[
+  {
+    "id": "atmovies-t02a03",
+    "brand": "微風影城",
+    "city": "台北",
+    "county": "台北市",
+    "district": "松山區",
+    "name": "微風影城",
+    "provider": "atmovies",
+    "aliases": [
+      "微風影城",
+      "微風"
+    ],
+    "sourceNames": [
+      "微風影城"
+    ],
+    "theaterCode": "t02a03",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02a03/a02/",
+    "bookingUrl": "https://breezecinemas.tixi.com.tw/",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t02a05",
+    "brand": "總督影城",
+    "city": "台北",
+    "county": "台北市",
+    "district": "松山區",
+    "name": "總督影城",
+    "provider": "atmovies",
+    "aliases": [
+      "總督影城",
+      "總督"
+    ],
+    "sourceNames": [
+      "總督影城"
+    ],
+    "theaterCode": "t02a05",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02a05/a02/",
+    "bookingUrl": "https://governor.tixi.com.tw/",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t02a06",
+    "brand": "哈拉影城",
+    "city": "台北",
+    "county": "台北市",
+    "district": "內湖區",
+    "name": "哈拉影城",
+    "provider": "atmovies",
+    "aliases": [
+      "哈拉影城",
+      "哈拉"
+    ],
+    "sourceNames": [
+      "哈拉影城"
+    ],
+    "theaterCode": "t02a06",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02a06/a02/",
+    "bookingUrl": "http://halarcity.com.tw/browsing/Cinemas/Details/0000000001",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t02a09",
+    "brand": "喜樂時代",
+    "city": "台北",
+    "county": "台北市",
+    "district": "南港區",
+    "name": "喜樂時代影城",
+    "provider": "atmovies",
+    "aliases": [
+      "喜樂時代影城",
+      "喜樂時代",
+      "南港喜樂時代",
+      "喜樂時代南港店"
+    ],
+    "sourceNames": [
+      "喜樂時代影城"
+    ],
+    "theaterCode": "t02a09",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02a09/a02/",
+    "bookingUrl": "https://www.centuryasia.com.tw/book.html?sid=Nangang%26ver=0fKKApRlrx8=",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t02a13",
+    "brand": "秀泰",
+    "city": "台北",
+    "county": "台北市",
+    "district": "信義區",
+    "name": "大巨蛋秀泰影城",
+    "provider": "atmovies",
+    "aliases": [
+      "大巨蛋秀泰影城",
+      "大巨蛋秀泰",
+      "台北大巨蛋秀泰",
+      "信義秀泰"
+    ],
+    "sourceNames": [
+      "大巨蛋秀泰影城"
+    ],
+    "theaterCode": "t02a13",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02a13/a02/",
+    "bookingUrl": "https://www.showtimes.com.tw/info/cinema/91",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t02b01",
+    "brand": "國賓",
+    "city": "台北",
+    "county": "台北市",
+    "district": "萬華區",
+    "name": "國賓戲院",
+    "provider": "atmovies",
+    "aliases": [
+      "國賓戲院",
+      "國賓",
+      "西門國賓",
+      "國賓大戲院",
+      "台北國賓大戲院",
+      "萬華國賓"
+    ],
+    "sourceNames": [
+      "國賓戲院"
+    ],
+    "theaterCode": "t02b01",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02b01/a02/",
+    "bookingUrl": "http://www.ambassador.com.tw/home",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t02b03",
+    "brand": "樂聲影城",
+    "city": "台北",
+    "county": "台北市",
+    "district": "萬華區",
+    "name": "樂聲影城",
+    "provider": "atmovies",
+    "aliases": [
+      "樂聲影城",
+      "樂聲",
+      "西門樂聲"
+    ],
+    "sourceNames": [
+      "樂聲影城"
+    ],
+    "theaterCode": "t02b03",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02b03/a02/",
+    "bookingUrl": "http://www.luxcinema.com.tw/web/showtime.php",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t02b05",
+    "brand": "新光",
+    "city": "台北",
+    "county": "台北市",
+    "district": "萬華區",
+    "name": "台北新光影城",
+    "provider": "atmovies",
+    "aliases": [
+      "台北新光影城",
+      "台北新光",
+      "新光",
+      "萬華新光"
+    ],
+    "sourceNames": [
+      "台北新光影城"
+    ],
+    "theaterCode": "t02b05",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02b05/a02/",
+    "bookingUrl": "https://www.skcinemas.com/sessions",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t02b06",
+    "brand": "喜樂時代",
+    "city": "台北",
+    "county": "台北市",
+    "district": "萬華區",
+    "name": "喜樂時代影城西門今日店",
+    "provider": "atmovies",
+    "aliases": [
+      "喜樂時代影城西門今日店",
+      "西門喜樂時代",
+      "今日喜樂時代",
+      "萬華喜樂時代"
+    ],
+    "sourceNames": [
+      "喜樂時代影城西門今日店"
+    ],
+    "theaterCode": "t02b06",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02b06/a02/",
+    "bookingUrl": "http://ximen.centuryasia.com.tw/ticket_online.aspx",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t02b07",
+    "brand": "真善美戲院",
+    "city": "台北",
+    "county": "台北市",
+    "district": "萬華區",
+    "name": "真善美戲院",
+    "provider": "atmovies",
+    "aliases": [
+      "真善美戲院",
+      "真善美"
+    ],
+    "sourceNames": [
+      "真善美戲院"
+    ],
+    "theaterCode": "t02b07",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02b07/a02/",
+    "bookingUrl": "http://wonderful.movie.com.tw/time",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t02b16",
+    "brand": "光點",
+    "city": "台北",
+    "county": "台北市",
+    "district": "中正區",
+    "name": "光點華山電影館",
+    "provider": "atmovies",
+    "aliases": [
+      "光點華山電影館",
+      "光點華山",
+      "華山光點",
+      "中正光點"
+    ],
+    "sourceNames": [
+      "光點華山電影館"
+    ],
+    "theaterCode": "t02b16",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02b16/a02/",
+    "bookingUrl": "http://www.spot-hs.org.tw/movie/schedule.html",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t02c01",
+    "brand": "百老匯",
+    "city": "台北",
+    "county": "台北市",
+    "district": "中正區",
+    "name": "百老匯影城公館店",
+    "provider": "atmovies",
+    "aliases": [
+      "百老匯影城公館店",
+      "公館百老匯",
+      "中正百老匯"
+    ],
+    "sourceNames": [
+      "百老匯影城公館店"
+    ],
+    "theaterCode": "t02c01",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02c01/a02/",
+    "bookingUrl": "https://www.broadway-cineplex.com.tw/book.html?obj=Taipei",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t02d02",
+    "brand": "國賓",
+    "city": "台北",
+    "county": "台北市",
+    "district": "中山區",
+    "name": "國賓長春影城",
+    "provider": "atmovies",
+    "aliases": [
+      "國賓長春影城",
+      "國賓長春",
+      "長春國賓",
+      "台北長春國賓",
+      "中山國賓"
+    ],
+    "sourceNames": [
+      "國賓長春影城"
+    ],
+    "theaterCode": "t02d02",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02d02/a02/",
+    "bookingUrl": "https://www.ambassador.com.tw/home/Showtime?ID=453b2966-f7c2-44a9-b2eb-687493855d0e",
+    "websiteFromDirectory": false,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t02d03",
+    "brand": "秀泰",
+    "city": "台北",
+    "county": "台北市",
+    "district": "中山區",
+    "name": "欣欣秀泰影城",
+    "provider": "atmovies",
+    "aliases": [
+      "欣欣秀泰影城",
+      "欣欣秀泰",
+      "中山秀泰"
+    ],
+    "sourceNames": [
+      "欣欣秀泰影城"
+    ],
+    "theaterCode": "t02d03",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02d03/a02/",
+    "bookingUrl": "https://www.showtimes.com.tw/events?corpId=2",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t02d04",
+    "brand": "新光",
+    "city": "台北",
+    "county": "台北市",
+    "district": "士林區",
+    "name": "台北天母新光影城",
+    "provider": "atmovies",
+    "aliases": [
+      "台北天母新光影城",
+      "台北天母新光",
+      "天母新光",
+      "士林新光"
+    ],
+    "sourceNames": [
+      "台北天母新光影城"
+    ],
+    "theaterCode": "t02d04",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02d04/a02/",
+    "bookingUrl": "https://www.skcinemas.com/sessions?c=1005",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t02d05",
+    "brand": "美麗華",
+    "city": "台北",
+    "county": "台北市",
+    "district": "中山區",
+    "name": "美麗華大直",
+    "provider": "atmovies",
+    "aliases": [
+      "美麗華大直",
+      "大直美麗華",
+      "美麗華影城",
+      "中山美麗華"
+    ],
+    "sourceNames": [
+      "美麗華大直"
+    ],
+    "theaterCode": "t02d05",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02d05/a02/",
+    "bookingUrl": "http://www.miramarcinemas.tw/timetable",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t02d06",
+    "brand": "美麗新",
+    "city": "台北",
+    "county": "台北市",
+    "district": "中山區",
+    "name": "美麗新大直皇家影城",
+    "provider": "atmovies",
+    "aliases": [
+      "美麗新大直皇家影城",
+      "美麗新大直皇家",
+      "大直美麗新",
+      "美麗新大直",
+      "中山美麗新"
+    ],
+    "sourceNames": [
+      "美麗新大直皇家影城"
+    ],
+    "theaterCode": "t02d06",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02d06/a02/",
+    "bookingUrl": "https://www.miranewcinemas.com.tw/",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t02d20",
+    "brand": "光點",
+    "city": "台北",
+    "county": "台北市",
+    "district": "中山區",
+    "name": "光點台北電影院",
+    "provider": "atmovies",
+    "aliases": [
+      "光點台北電影院",
+      "光點台北",
+      "台北光點",
+      "中山光點"
+    ],
+    "sourceNames": [
+      "光點台北電影院"
+    ],
+    "theaterCode": "t02d20",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02d20/a02/",
+    "bookingUrl": "http://www.spot.org.tw/schedule/schedule_one.html",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t02e03",
+    "brand": "新莊鴻金寶麻吉影城",
+    "city": "新北",
+    "county": "新北市",
+    "district": "新莊區",
+    "name": "新莊鴻金寶麻吉影城",
+    "provider": "atmovies",
+    "aliases": [
+      "新莊鴻金寶麻吉影城",
+      "新莊鴻金寶麻吉"
+    ],
+    "sourceNames": [
+      "新莊鴻金寶麻吉影城"
+    ],
+    "theaterCode": "t02e03",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02e03/a02/",
+    "bookingUrl": "http://machicinema.wordpress.com/",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t02e04",
+    "brand": "三重天台戲院",
+    "city": "新北",
+    "county": "新北市",
+    "district": "三重區",
+    "name": "三重天台戲院",
+    "provider": "atmovies",
+    "aliases": [
+      "三重天台戲院",
+      "三重天台"
+    ],
+    "sourceNames": [
+      "三重天台戲院"
+    ],
+    "theaterCode": "t02e04",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02e04/a02/",
+    "bookingUrl": "http://www.t-movies.com.tw/",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t02e08",
+    "brand": "府中15",
+    "city": "新北",
+    "county": "新北市",
+    "district": "板橋區",
+    "name": "府中15",
+    "provider": "atmovies",
+    "aliases": [
+      "府中15"
+    ],
+    "sourceNames": [
+      "府中15"
+    ],
+    "theaterCode": "t02e08",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02e08/a02/",
+    "bookingUrl": "https://www.fuzhong15.ntpc.gov.tw/xcmovie?xsmsid=0M361641875264878260",
+    "websiteFromDirectory": true,
+    "availability": "image_only"
+  },
+  {
+    "id": "atmovies-t02e10",
+    "brand": "國賓",
+    "city": "新北",
+    "county": "新北市",
+    "district": "林口區",
+    "name": "國賓林口昕境廣場",
+    "provider": "atmovies",
+    "aliases": [
+      "國賓林口昕境廣場",
+      "林口國賓",
+      "林口昕境國賓",
+      "昕境國賓"
+    ],
+    "sourceNames": [
+      "國賓林口昕境廣場"
+    ],
+    "theaterCode": "t02e10",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02e10/a02/",
+    "bookingUrl": "http://www.ambassador.com.tw/home",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t02e11",
+    "brand": "國賓",
+    "city": "新北",
+    "county": "新北市",
+    "district": "新莊區",
+    "name": "國賓新莊晶冠廣場影城",
+    "provider": "atmovies",
+    "aliases": [
+      "國賓新莊晶冠廣場影城",
+      "國賓新莊晶冠廣場",
+      "新莊國賓",
+      "新莊晶冠國賓",
+      "晶冠國賓"
+    ],
+    "sourceNames": [
+      "國賓新莊晶冠廣場影城"
+    ],
+    "theaterCode": "t02e11",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02e11/a02/",
+    "bookingUrl": "http://www.ambassador.com.tw/home",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t02e13",
+    "brand": "秀泰",
+    "city": "新北",
+    "county": "新北市",
+    "district": "樹林區",
+    "name": "樹林秀泰影城",
+    "provider": "atmovies",
+    "aliases": [
+      "樹林秀泰影城",
+      "樹林秀泰"
+    ],
+    "sourceNames": [
+      "樹林秀泰影城"
+    ],
+    "theaterCode": "t02e13",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02e13/a02/",
+    "bookingUrl": "https://www.showtimes.com.tw/events?corpId=54",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t02e15",
+    "brand": "秀泰",
+    "city": "新北",
+    "county": "新北市",
+    "district": "土城區",
+    "name": "土城秀泰影城",
+    "provider": "atmovies",
+    "aliases": [
+      "土城秀泰影城",
+      "土城秀泰"
+    ],
+    "sourceNames": [
+      "土城秀泰影城"
+    ],
+    "theaterCode": "t02e15",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02e15/a02/",
+    "bookingUrl": "https://www.showtimes.com.tw/events?corpId=55",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t02e17",
+    "brand": "喜樂時代",
+    "city": "新北",
+    "county": "新北市",
+    "district": "永和區",
+    "name": "永和喜樂時代影城",
+    "provider": "atmovies",
+    "aliases": [
+      "永和喜樂時代影城",
+      "永和喜樂時代"
+    ],
+    "sourceNames": [
+      "永和喜樂時代影城"
+    ],
+    "theaterCode": "t02e17",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02e17/a02/",
+    "bookingUrl": "https://beyond.centuryasia.com.tw/ticket_online.aspx",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t02e18",
+    "brand": "國賓",
+    "city": "新北",
+    "county": "新北市",
+    "district": "淡水區",
+    "name": "國賓影城淡水禮萊廣場",
+    "provider": "atmovies",
+    "aliases": [
+      "國賓影城淡水禮萊廣場",
+      "淡水國賓",
+      "淡水禮萊國賓"
+    ],
+    "sourceNames": [
+      "國賓影城淡水禮萊廣場"
+    ],
+    "theaterCode": "t02e18",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02e18/a02/",
+    "bookingUrl": "http://www.ambassador.com.tw/home",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t02e22",
+    "brand": "國家電影及視聽文化中心",
+    "city": "新北",
+    "county": "新北市",
+    "district": "新莊區",
+    "name": "國家電影及視聽文化中心",
+    "provider": "atmovies",
+    "aliases": [
+      "國家電影及視聽文化中心",
+      "國家電影中心",
+      "國影中心"
+    ],
+    "sourceNames": [
+      "國家電影及視聽文化中心"
+    ],
+    "theaterCode": "t02e22",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02e22/a02/",
+    "bookingUrl": "https://www.tfai.org.tw/program/calendar",
+    "websiteFromDirectory": true,
+    "availability": "image_only"
+  },
+  {
+    "id": "atmovies-t02f05",
+    "brand": "景美佳佳戲院",
+    "city": "台北",
+    "county": "台北市",
+    "district": "文山區",
+    "name": "景美佳佳戲院",
+    "provider": "atmovies",
+    "aliases": [
+      "景美佳佳戲院",
+      "景美佳佳"
+    ],
+    "sourceNames": [
+      "景美佳佳戲院"
+    ],
+    "theaterCode": "t02f05",
+    "areaCode": "a02",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02f05/a02/",
+    "bookingUrl": "https://reurl.cc/AL3Ej",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t02g04",
+    "brand": "秀泰",
+    "city": "基隆",
+    "county": "基隆市",
+    "district": "中正區",
+    "name": "基隆秀泰影城",
+    "provider": "atmovies",
+    "aliases": [
+      "基隆秀泰影城",
+      "基隆秀泰",
+      "秀泰",
+      "中正秀泰"
+    ],
+    "sourceNames": [
+      "基隆秀泰影城"
+    ],
+    "theaterCode": "t02g04",
+    "areaCode": "a01",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t02g04/a01/",
+    "bookingUrl": "https://www.showtimes.com.tw/events?corpId=5",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t03301",
+    "brand": "美麗新",
+    "city": "桃園",
+    "county": "桃園市",
+    "district": "蘆竹鄉",
+    "name": "美麗新台茂影城",
+    "provider": "atmovies",
+    "aliases": [
+      "美麗新台茂影城",
+      "美麗新台茂",
+      "台茂美麗新",
+      "蘆竹美麗新"
+    ],
+    "sourceNames": [
+      "美麗新台茂影城"
+    ],
+    "theaterCode": "t03301",
+    "areaCode": "a03",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t03301/a03/",
+    "bookingUrl": "https://www.miranewcinemas.com.tw/",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t03302",
+    "brand": "星橋國際影城",
+    "city": "桃園",
+    "county": "桃園市",
+    "district": "中壢區",
+    "name": "星橋國際影城",
+    "provider": "atmovies",
+    "aliases": [
+      "星橋國際影城",
+      "星橋國際"
+    ],
+    "sourceNames": [
+      "星橋國際影城"
+    ],
+    "theaterCode": "t03302",
+    "areaCode": "a03",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t03302/a03/",
+    "bookingUrl": "https://www.sbcmovies.com.tw/browsing/",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t03303",
+    "brand": "威尼斯影城",
+    "city": "桃園",
+    "county": "桃園市",
+    "district": "中壢區",
+    "name": "威尼斯影城",
+    "provider": "atmovies",
+    "aliases": [
+      "威尼斯影城",
+      "威尼斯"
+    ],
+    "sourceNames": [
+      "威尼斯影城"
+    ],
+    "theaterCode": "t03303",
+    "areaCode": "a03",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t03303/a03/",
+    "bookingUrl": "http://www.venice-cinemas.com.tw/showtime.php",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t03304",
+    "brand": "國賓",
+    "city": "桃園",
+    "county": "桃園市",
+    "district": "八德區",
+    "name": "國賓桃園八德",
+    "provider": "atmovies",
+    "aliases": [
+      "國賓桃園八德",
+      "八德國賓",
+      "八德置地國賓"
+    ],
+    "sourceNames": [
+      "國賓桃園八德"
+    ],
+    "theaterCode": "t03304",
+    "areaCode": "a03",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t03304/a03/",
+    "bookingUrl": "http://www.ambassador.com.tw/home",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t03307",
+    "brand": "in89",
+    "city": "桃園",
+    "county": "桃園市",
+    "district": "桃園區",
+    "name": "桃園站前in89豪華影城",
+    "provider": "atmovies",
+    "aliases": [
+      "桃園站前in89豪華影城",
+      "桃園站前in89豪華",
+      "站前in89豪華",
+      "桃園in89",
+      "桃園站前in89"
+    ],
+    "sourceNames": [
+      "桃園站前in89豪華影城"
+    ],
+    "theaterCode": "t03307",
+    "areaCode": "a03",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t03307/a03/",
+    "bookingUrl": "https://www.in89.com.tw/film_list.aspx?TheaterId=1",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t03311",
+    "brand": "桃園光影文化館",
+    "city": "桃園",
+    "county": "桃園市",
+    "district": "桃園區",
+    "name": "桃園光影文化館",
+    "provider": "atmovies",
+    "aliases": [
+      "桃園光影文化館",
+      "光影文化館"
+    ],
+    "sourceNames": [
+      "桃園光影文化館"
+    ],
+    "theaterCode": "t03311",
+    "areaCode": "a03",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t03311/a03/",
+    "bookingUrl": "https://www.facebook.com/taoyuanartscinema2/",
+    "websiteFromDirectory": true,
+    "availability": "image_only"
+  },
+  {
+    "id": "atmovies-t03312",
+    "brand": "中壢光影電影館",
+    "city": "桃園",
+    "county": "桃園市",
+    "district": "中壢區",
+    "name": "中壢光影電影館",
+    "provider": "atmovies",
+    "aliases": [
+      "中壢光影電影館",
+      "中壢光影"
+    ],
+    "sourceNames": [
+      "中壢光影電影館"
+    ],
+    "theaterCode": "t03312",
+    "areaCode": "a03",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t03312/a03/",
+    "bookingUrl": "https://www.facebook.com/TaoyuanArtsCinema/",
+    "websiteFromDirectory": true,
+    "availability": "image_only"
+  },
+  {
+    "id": "atmovies-t03315",
+    "brand": "新光",
+    "city": "桃園",
+    "county": "桃園市",
+    "district": "中壢區",
+    "name": "桃園新光影城",
+    "provider": "atmovies",
+    "aliases": [
+      "桃園新光影城",
+      "桃園新光",
+      "新光",
+      "中壢新光"
+    ],
+    "sourceNames": [
+      "桃園新光影城"
+    ],
+    "theaterCode": "t03315",
+    "areaCode": "a03",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t03315/a03/",
+    "bookingUrl": "https://www.skcinemas.com/sessions",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t03510",
+    "brand": "百老匯",
+    "city": "新竹",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "name": "百老匯影城竹北店",
+    "provider": "atmovies",
+    "aliases": [
+      "百老匯影城竹北店",
+      "竹北百老匯",
+      "百老匯竹北"
+    ],
+    "sourceNames": [
+      "百老匯影城竹北店"
+    ],
+    "theaterCode": "t03510",
+    "areaCode": "a35",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t03510/a35/",
+    "bookingUrl": "https://www.broadway-cineplex.com.tw/book.html?obj=Taipei",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t03801",
+    "brand": "秀泰",
+    "city": "花蓮",
+    "county": "花蓮縣",
+    "district": "花蓮市",
+    "name": "花蓮秀泰影城",
+    "provider": "atmovies",
+    "aliases": [
+      "花蓮秀泰影城",
+      "花蓮秀泰",
+      "秀泰"
+    ],
+    "sourceNames": [
+      "花蓮秀泰影城"
+    ],
+    "theaterCode": "t03801",
+    "areaCode": "a38",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t03801/a38/",
+    "bookingUrl": "https://www.showtimes.com.tw/events?corpId=3",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t03804",
+    "brand": "花蓮鐵道電影院",
+    "city": "花蓮",
+    "county": "花蓮縣",
+    "district": "花蓮市",
+    "name": "花蓮鐵道電影院",
+    "provider": "atmovies",
+    "aliases": [
+      "花蓮鐵道電影院",
+      "花蓮鐵道",
+      "鐵道"
+    ],
+    "sourceNames": [
+      "花蓮鐵道電影院"
+    ],
+    "theaterCode": "t03804",
+    "areaCode": "a38",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t03804/a38/",
+    "bookingUrl": "https://film.hccc.gov.tw/?page_id=5297",
+    "websiteFromDirectory": true,
+    "availability": "image_only"
+  },
+  {
+    "id": "atmovies-t03902",
+    "brand": "宜蘭日新戲院",
+    "city": "宜蘭",
+    "county": "宜蘭縣",
+    "district": "羅東鎮",
+    "name": "宜蘭日新戲院",
+    "provider": "atmovies",
+    "aliases": [
+      "宜蘭日新戲院",
+      "宜蘭日新",
+      "日新"
+    ],
+    "sourceNames": [
+      "宜蘭日新戲院"
+    ],
+    "theaterCode": "t03902",
+    "areaCode": "a39",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t03902/a39/",
+    "bookingUrl": "https://www.ilanmovie.com/index2.php",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t03904",
+    "brand": "日新戲院-統一廳",
+    "city": "宜蘭",
+    "county": "宜蘭縣",
+    "district": "羅東鎮",
+    "name": "日新戲院-統一廳",
+    "provider": "atmovies",
+    "aliases": [
+      "日新戲院-統一廳"
+    ],
+    "sourceNames": [
+      "日新戲院-統一廳"
+    ],
+    "theaterCode": "t03904",
+    "areaCode": "a39",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t03904/a39/",
+    "bookingUrl": "https://www.ilanmovie.com/index3.php",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t03905",
+    "brand": "新月豪華影城",
+    "city": "宜蘭",
+    "county": "宜蘭縣",
+    "district": "宜蘭市",
+    "name": "新月豪華影城",
+    "provider": "atmovies",
+    "aliases": [
+      "新月豪華影城",
+      "新月豪華"
+    ],
+    "sourceNames": [
+      "新月豪華影城"
+    ],
+    "theaterCode": "t03905",
+    "areaCode": "a39",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t03905/a39/",
+    "bookingUrl": "https://www.lunacinemax.com.tw/movie_time/showtime.aspx",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t04401",
+    "brand": "新光",
+    "city": "台中",
+    "county": "台中市",
+    "district": "西屯區",
+    "name": "台中新光影城",
+    "provider": "atmovies",
+    "aliases": [
+      "台中新光影城",
+      "台中新光",
+      "新光",
+      "西屯新光"
+    ],
+    "sourceNames": [
+      "台中新光影城"
+    ],
+    "theaterCode": "t04401",
+    "areaCode": "a04",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t04401/a04/",
+    "bookingUrl": "https://www.skcinemas.com/sessions",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t04404",
+    "brand": "日日新影城",
+    "city": "台中",
+    "county": "台中市",
+    "district": "中區",
+    "name": "日日新影城",
+    "provider": "atmovies",
+    "aliases": [
+      "日日新影城",
+      "日日新"
+    ],
+    "sourceNames": [
+      "日日新影城"
+    ],
+    "theaterCode": "t04404",
+    "areaCode": "a04",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t04404/a04/",
+    "bookingUrl": "https://srm.com.tw/%E5%A0%B4%E6%AC%A1%E6%9F%A5%E8%A9%A2/",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t04405",
+    "brand": "親親戲院",
+    "city": "台中",
+    "county": "台中市",
+    "district": "北區",
+    "name": "親親戲院",
+    "provider": "atmovies",
+    "aliases": [
+      "親親戲院",
+      "親親"
+    ],
+    "sourceNames": [
+      "親親戲院"
+    ],
+    "theaterCode": "t04405",
+    "areaCode": "a04",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t04405/a04/",
+    "bookingUrl": "http://www.ccmovie.com.tw/showtime.html",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t04410",
+    "brand": "秀泰",
+    "city": "台中",
+    "county": "台中市",
+    "district": "東區",
+    "name": "台中站前秀泰影城",
+    "provider": "atmovies",
+    "aliases": [
+      "台中站前秀泰影城",
+      "台中站前秀泰",
+      "站前秀泰",
+      "東秀泰"
+    ],
+    "sourceNames": [
+      "台中站前秀泰影城"
+    ],
+    "theaterCode": "t04410",
+    "areaCode": "a04",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t04410/a04/",
+    "bookingUrl": "https://www.showtimes.com.tw/events?corpId=53",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t04411",
+    "brand": "秀泰",
+    "city": "台中",
+    "county": "台中市",
+    "district": "南屯區",
+    "name": "台中文心秀泰影城",
+    "provider": "atmovies",
+    "aliases": [
+      "台中文心秀泰影城",
+      "台中文心秀泰",
+      "文心秀泰",
+      "南屯秀泰"
+    ],
+    "sourceNames": [
+      "台中文心秀泰影城"
+    ],
+    "theaterCode": "t04411",
+    "areaCode": "a04",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t04411/a04/",
+    "bookingUrl": "https://www.showtimes.com.tw/cinemas/56/",
+    "websiteFromDirectory": false,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t04412",
+    "brand": "in89",
+    "city": "台中",
+    "county": "台中市",
+    "district": "豐原區",
+    "name": "台中豐原in89豪華影城",
+    "provider": "atmovies",
+    "aliases": [
+      "台中豐原in89豪華影城",
+      "台中豐原in89豪華",
+      "豐原in89豪華",
+      "豐原in89",
+      "台中豐原in89"
+    ],
+    "sourceNames": [
+      "台中豐原in89豪華影城"
+    ],
+    "theaterCode": "t04412",
+    "areaCode": "a04",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t04412/a04/",
+    "bookingUrl": "https://www.in89.com.tw/film_list.aspx?TheaterId=15",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t04413",
+    "brand": "秀泰",
+    "city": "台中",
+    "county": "台中市",
+    "district": "后里區",
+    "name": "台中麗寶秀泰",
+    "provider": "atmovies",
+    "aliases": [
+      "台中麗寶秀泰",
+      "麗寶秀泰",
+      "后里秀泰"
+    ],
+    "sourceNames": [
+      "台中麗寶秀泰"
+    ],
+    "theaterCode": "t04413",
+    "areaCode": "a04",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t04413/a04/",
+    "bookingUrl": "https://www.showtimes.com.tw/events?corpId=59",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t04424",
+    "brand": "全球影城",
+    "city": "台中",
+    "county": "台中市",
+    "district": "西區",
+    "name": "全球影城",
+    "provider": "atmovies",
+    "aliases": [
+      "全球影城",
+      "全球"
+    ],
+    "sourceNames": [
+      "全球影城"
+    ],
+    "theaterCode": "t04424",
+    "areaCode": "a04",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t04424/a04/",
+    "bookingUrl": "https://www.ucc-cinema.com.tw/product.html",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t04426",
+    "brand": "時代數位3D影城",
+    "city": "台中",
+    "county": "台中市",
+    "district": "清水區",
+    "name": "時代數位3D影城",
+    "provider": "atmovies",
+    "aliases": [
+      "時代數位3D影城",
+      "時代數位3D"
+    ],
+    "sourceNames": [
+      "時代數位3D影城"
+    ],
+    "theaterCode": "t04426",
+    "areaCode": "a04",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t04426/a04/",
+    "bookingUrl": "http://www.timescinema.com.tw/times.php?showtimes=1085",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t04427",
+    "brand": "中山73影視藝文空間",
+    "city": "台中",
+    "county": "台中市",
+    "district": "中區",
+    "name": "中山73影視藝文空間",
+    "provider": "atmovies",
+    "aliases": [
+      "中山73影視藝文空間"
+    ],
+    "sourceNames": [
+      "中山73影視藝文空間"
+    ],
+    "theaterCode": "t04427",
+    "areaCode": "a04",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t04427/a04/",
+    "bookingUrl": "https://www.facebook.com/TCZS73/",
+    "websiteFromDirectory": true,
+    "availability": "image_only"
+  },
+  {
+    "id": "atmovies-t04428",
+    "brand": "王牌映画影城",
+    "city": "台中",
+    "county": "台中市",
+    "district": "西區",
+    "name": "王牌映画影城",
+    "provider": "atmovies",
+    "aliases": [
+      "王牌映画影城",
+      "王牌映画"
+    ],
+    "sourceNames": [
+      "王牌映画影城"
+    ],
+    "theaterCode": "t04428",
+    "areaCode": "a04",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t04428/a04/",
+    "bookingUrl": "https://www.acecinema.com.tw/movie/all",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t04501",
+    "brand": "環球中華影城",
+    "city": "雲林",
+    "county": "雲林縣",
+    "district": "斗六市",
+    "name": "環球中華影城",
+    "provider": "atmovies",
+    "aliases": [
+      "環球中華影城",
+      "環球中華"
+    ],
+    "sourceNames": [
+      "環球中華影城"
+    ],
+    "theaterCode": "t04501",
+    "areaCode": "a45",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t04501/a45/",
+    "bookingUrl": "http://www.uch-movies.tw/index.aspx",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t04504",
+    "brand": "秀泰",
+    "city": "雲林",
+    "county": "雲林縣",
+    "district": "北港鎮",
+    "name": "雲林北港秀泰",
+    "provider": "atmovies",
+    "aliases": [
+      "雲林北港秀泰",
+      "北港秀泰"
+    ],
+    "sourceNames": [
+      "雲林北港秀泰"
+    ],
+    "theaterCode": "t04504",
+    "areaCode": "a45",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t04504/a45/",
+    "bookingUrl": "https://www.showtimes.com.tw/events?corpId=58",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t04703",
+    "brand": "員林影城",
+    "city": "彰化",
+    "county": "彰化縣",
+    "district": "員林鎮",
+    "name": "員林影城",
+    "provider": "atmovies",
+    "aliases": [
+      "員林影城",
+      "員林"
+    ],
+    "sourceNames": [
+      "員林影城"
+    ],
+    "theaterCode": "t04703",
+    "areaCode": "a47",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t04703/a47/",
+    "bookingUrl": "https://www.facebook.com/YuanlinCinema",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t04901",
+    "brand": "南投戲院",
+    "city": "南投",
+    "county": "南投縣",
+    "district": "南投市",
+    "name": "南投戲院",
+    "provider": "atmovies",
+    "aliases": [
+      "南投戲院"
+    ],
+    "sourceNames": [
+      "南投戲院"
+    ],
+    "theaterCode": "t04901",
+    "areaCode": "a49",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t04901/a49/",
+    "bookingUrl": "https://www.nantoutheater.com/index",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t04902",
+    "brand": "埔里山明影城",
+    "city": "南投",
+    "county": "南投縣",
+    "district": "埔里鎮",
+    "name": "埔里山明影城",
+    "provider": "atmovies",
+    "aliases": [
+      "埔里山明影城",
+      "埔里山明"
+    ],
+    "sourceNames": [
+      "埔里山明影城"
+    ],
+    "theaterCode": "t04902",
+    "areaCode": "a49",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t04902/a49/",
+    "bookingUrl": "http://www.shanmingcinema.com.tw/showtimes.php",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t05502",
+    "brand": "嘉年華戲院",
+    "city": "嘉義",
+    "county": "嘉義市",
+    "district": "西區",
+    "name": "嘉年華戲院",
+    "provider": "atmovies",
+    "aliases": [
+      "嘉年華戲院",
+      "嘉年華"
+    ],
+    "sourceNames": [
+      "嘉年華戲院"
+    ],
+    "theaterCode": "t05502",
+    "areaCode": "a05",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t05502/a05/",
+    "bookingUrl": "http://www.3d-movies.tw/showtimes.asp",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t05504",
+    "brand": "秀泰",
+    "city": "嘉義",
+    "county": "嘉義市",
+    "district": "西區",
+    "name": "嘉義秀泰影城",
+    "provider": "atmovies",
+    "aliases": [
+      "嘉義秀泰影城",
+      "嘉義秀泰",
+      "秀泰",
+      "西秀泰"
+    ],
+    "sourceNames": [
+      "嘉義秀泰影城"
+    ],
+    "theaterCode": "t05504",
+    "areaCode": "a05",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t05504/a05/",
+    "bookingUrl": "https://www.showtimes.com.tw/events?corpId=9",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t05505",
+    "brand": "in89",
+    "city": "嘉義",
+    "county": "嘉義市",
+    "district": "東區",
+    "name": "嘉義in89豪華影城",
+    "provider": "atmovies",
+    "aliases": [
+      "嘉義in89豪華影城",
+      "嘉義in89豪華",
+      "in89豪華",
+      "嘉義in89",
+      "東in89"
+    ],
+    "sourceNames": [
+      "嘉義in89豪華影城"
+    ],
+    "theaterCode": "t05505",
+    "areaCode": "a05",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t05505/a05/",
+    "bookingUrl": "https://www.in89cinemax.com/film_list.aspx?TheaterId=17",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t06602",
+    "brand": "南台電影城",
+    "city": "台南",
+    "county": "台南市",
+    "district": "中西區",
+    "name": "南台電影城",
+    "provider": "atmovies",
+    "aliases": [
+      "南台電影城",
+      "南台"
+    ],
+    "sourceNames": [
+      "南台電影城"
+    ],
+    "theaterCode": "t06602",
+    "areaCode": "a06",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t06602/a06/",
+    "bookingUrl": "http://www.nt-movie.com.tw/showtime.php",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t06607",
+    "brand": "新光",
+    "city": "台南",
+    "county": "台南市",
+    "district": "中西區",
+    "name": "台南新光影城",
+    "provider": "atmovies",
+    "aliases": [
+      "台南新光影城",
+      "台南新光",
+      "新光",
+      "中西新光"
+    ],
+    "sourceNames": [
+      "台南新光影城"
+    ],
+    "theaterCode": "t06607",
+    "areaCode": "a06",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t06607/a06/",
+    "bookingUrl": "https://www.skcinemas.com/sessions",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t06623",
+    "brand": "全美戲院",
+    "city": "台南",
+    "county": "台南市",
+    "district": "中西區",
+    "name": "全美戲院",
+    "provider": "atmovies",
+    "aliases": [
+      "全美戲院",
+      "全美"
+    ],
+    "sourceNames": [
+      "全美戲院"
+    ],
+    "theaterCode": "t06623",
+    "areaCode": "a06",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t06623/a06/",
+    "bookingUrl": "https://www.cm-movie.com.tw/category/time/",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t06625",
+    "brand": "麻豆戲院",
+    "city": "台南",
+    "county": "台南市",
+    "district": "麻豆區",
+    "name": "麻豆戲院",
+    "provider": "atmovies",
+    "aliases": [
+      "麻豆戲院",
+      "麻豆"
+    ],
+    "sourceNames": [
+      "麻豆戲院"
+    ],
+    "theaterCode": "t06625",
+    "areaCode": "a06",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t06625/a06/",
+    "bookingUrl": "https://reurl.cc/5dK016",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t06628",
+    "brand": "秀泰",
+    "city": "台南",
+    "county": "台南市",
+    "district": "仁德區",
+    "name": "台南仁德秀泰影城",
+    "provider": "atmovies",
+    "aliases": [
+      "台南仁德秀泰影城",
+      "台南仁德秀泰",
+      "仁德秀泰"
+    ],
+    "sourceNames": [
+      "台南仁德秀泰影城"
+    ],
+    "theaterCode": "t06628",
+    "areaCode": "a06",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t06628/a06/",
+    "bookingUrl": null,
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t06801",
+    "brand": "金獅影城",
+    "city": "金門",
+    "county": "金門縣",
+    "district": "金湖鎮",
+    "name": "金獅影城",
+    "provider": "atmovies",
+    "aliases": [
+      "金獅影城",
+      "金獅"
+    ],
+    "sourceNames": [
+      "金獅影城"
+    ],
+    "theaterCode": "t06801",
+    "areaCode": "a68",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t06801/a68/",
+    "bookingUrl": "https://cinemax.windlion.com.tw/movies.php#anchor",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t06902",
+    "brand": "in89",
+    "city": "澎湖",
+    "county": "澎湖縣",
+    "district": "馬公市",
+    "name": "in89澎湖影城",
+    "provider": "atmovies",
+    "aliases": [
+      "in89澎湖影城",
+      "in89澎湖",
+      "澎湖in89",
+      "馬公in89"
+    ],
+    "sourceNames": [
+      "in89澎湖影城"
+    ],
+    "theaterCode": "t06902",
+    "areaCode": "a69",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t06902/a69/",
+    "bookingUrl": "https://www.in89cinemax.com/film_list.aspx?TheaterId=14",
+    "websiteFromDirectory": false,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t07702",
+    "brand": "in89",
+    "city": "高雄",
+    "county": "高雄市",
+    "district": "鹽埕區",
+    "name": "in89駁二電影院",
+    "provider": "atmovies",
+    "aliases": [
+      "in89駁二電影院",
+      "in89駁二",
+      "駁二in89",
+      "鹽埕in89"
+    ],
+    "sourceNames": [
+      "in89駁二電影院"
+    ],
+    "theaterCode": "t07702",
+    "areaCode": "a07",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t07702/a07/",
+    "bookingUrl": "https://www.in89.com.tw/film_list.aspx?TheaterId=2",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t07704",
+    "brand": "高雄環球影城",
+    "city": "高雄",
+    "county": "高雄市",
+    "district": "苓雅區",
+    "name": "高雄環球影城",
+    "provider": "atmovies",
+    "aliases": [
+      "高雄環球影城",
+      "高雄環球",
+      "環球"
+    ],
+    "sourceNames": [
+      "高雄環球影城"
+    ],
+    "theaterCode": "t07704",
+    "areaCode": "a07",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t07704/a07/",
+    "bookingUrl": "https://www.u-movie.com.tw/cinema/page.php?page_type=now%26portal=cinema%26ver=tw",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t07705",
+    "brand": "國賓",
+    "city": "高雄",
+    "county": "高雄市",
+    "district": "大樹區",
+    "name": "國賓義大世界影城",
+    "provider": "atmovies",
+    "aliases": [
+      "國賓義大世界影城",
+      "國賓義大世界",
+      "義大國賓",
+      "高雄義大國賓",
+      "大樹國賓"
+    ],
+    "sourceNames": [
+      "國賓義大世界影城"
+    ],
+    "theaterCode": "t07705",
+    "areaCode": "a07",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t07705/a07/",
+    "bookingUrl": "http://www.ambassador.com.tw/home",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t07707",
+    "brand": "秀泰",
+    "city": "高雄",
+    "county": "高雄市",
+    "district": "前鎮",
+    "name": "高雄夢時代秀泰影城",
+    "provider": "atmovies",
+    "aliases": [
+      "高雄夢時代秀泰影城",
+      "高雄夢時代秀泰",
+      "夢時代秀泰",
+      "前秀泰"
+    ],
+    "sourceNames": [
+      "高雄夢時代秀泰影城"
+    ],
+    "theaterCode": "t07707",
+    "areaCode": "a07",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t07707/a07/",
+    "bookingUrl": "https://www.showtimes.com.tw/ticketing",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t07708",
+    "brand": "國賓",
+    "city": "高雄",
+    "county": "高雄市",
+    "district": "前鎮",
+    "name": "國賓大魯閣草衙道影城",
+    "provider": "atmovies",
+    "aliases": [
+      "國賓大魯閣草衙道影城",
+      "國賓大魯閣草衙道",
+      "草衙道國賓",
+      "高雄SKM Park國賓",
+      "SKM Park國賓",
+      "前國賓"
+    ],
+    "sourceNames": [
+      "國賓大魯閣草衙道影城"
+    ],
+    "theaterCode": "t07708",
+    "areaCode": "a07",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t07708/a07/",
+    "bookingUrl": "http://www.ambassador.com.tw/home",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t07712",
+    "brand": "台鋁影城",
+    "city": "高雄",
+    "county": "高雄市",
+    "district": "前鎮",
+    "name": "台鋁影城",
+    "provider": "atmovies",
+    "aliases": [
+      "台鋁影城",
+      "台鋁"
+    ],
+    "sourceNames": [
+      "台鋁影城"
+    ],
+    "theaterCode": "t07712",
+    "areaCode": "a07",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t07712/a07/",
+    "bookingUrl": "https://www.facebook.com/MLDtailu/?locale=zh_TW",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t07726",
+    "brand": "高雄市電影館",
+    "city": "高雄",
+    "county": "高雄市",
+    "district": "鹽埕區",
+    "name": "高雄市電影館",
+    "provider": "atmovies",
+    "aliases": [
+      "高雄市電影館",
+      "市"
+    ],
+    "sourceNames": [
+      "高雄市電影館"
+    ],
+    "theaterCode": "t07726",
+    "areaCode": "a07",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t07726/a07/",
+    "bookingUrl": "http://kfa.kcg.gov.tw/film/calendar",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t07727",
+    "brand": "VR體感劇院",
+    "city": "高雄",
+    "county": "高雄市",
+    "district": "鹽埕區",
+    "name": "VR體感劇院",
+    "provider": "atmovies",
+    "aliases": [
+      "VR體感劇院"
+    ],
+    "sourceNames": [
+      "VR體感劇院"
+    ],
+    "theaterCode": "t07727",
+    "areaCode": "a07",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t07727/a07/",
+    "bookingUrl": "https://vrfilmlab.tw/movie/?status=in_theaters%26pages=1",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t07728",
+    "brand": "in89",
+    "city": "高雄",
+    "county": "高雄市",
+    "district": "前金區",
+    "name": "大立in89豪華影城",
+    "provider": "atmovies",
+    "aliases": [
+      "大立in89豪華影城",
+      "大立in89豪華",
+      "大立in89",
+      "高雄大立in89",
+      "前金in89"
+    ],
+    "sourceNames": [
+      "大立in89豪華影城"
+    ],
+    "theaterCode": "t07728",
+    "areaCode": "a07",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t07728/a07/",
+    "bookingUrl": "https://www.in89.com.tw/film_list.aspx?TheaterId=16",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t07729",
+    "brand": "秀泰",
+    "city": "高雄",
+    "county": "高雄市",
+    "district": "岡山區",
+    "name": "高雄岡山秀泰",
+    "provider": "atmovies",
+    "aliases": [
+      "高雄岡山秀泰",
+      "岡山秀泰"
+    ],
+    "sourceNames": [
+      "高雄岡山秀泰"
+    ],
+    "theaterCode": "t07729",
+    "areaCode": "a07",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t07729/a07/",
+    "bookingUrl": "http://www.showtimes.com.tw/ticketing",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t07730",
+    "brand": "喜樂時代",
+    "city": "高雄",
+    "county": "高雄市",
+    "district": "前鎮",
+    "name": "喜樂時代高雄總圖店",
+    "provider": "atmovies",
+    "aliases": [
+      "喜樂時代高雄總圖店",
+      "前喜樂時代"
+    ],
+    "sourceNames": [
+      "喜樂時代高雄總圖店"
+    ],
+    "theaterCode": "t07730",
+    "areaCode": "a07",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t07730/a07/",
+    "bookingUrl": "https://ksml.centuryasia.com.tw/ticket_online.aspx",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t07731",
+    "brand": "內惟藝術中心",
+    "city": "高雄",
+    "county": "高雄市",
+    "district": "鼓山區",
+    "name": "內惟藝術中心",
+    "provider": "atmovies",
+    "aliases": [
+      "內惟藝術中心"
+    ],
+    "sourceNames": [
+      "內惟藝術中心"
+    ],
+    "theaterCode": "t07731",
+    "areaCode": "a07",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t07731/a07/",
+    "bookingUrl": "https://www.nwac.org.tw/tw/movie-showings",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t08701",
+    "brand": "中影",
+    "city": "屏東",
+    "county": "屏東縣",
+    "district": "屏東市",
+    "name": "中影屏東影城",
+    "provider": "atmovies",
+    "aliases": [
+      "中影屏東影城",
+      "中影屏東",
+      "屏東中影"
+    ],
+    "sourceNames": [
+      "中影屏東影城"
+    ],
+    "theaterCode": "t08701",
+    "areaCode": "a87",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t08701/a87/",
+    "bookingUrl": "http://ptcinema.movie.com.tw/time",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t08703",
+    "brand": "國賓",
+    "city": "屏東",
+    "county": "屏東縣",
+    "district": "屏東市",
+    "name": "國賓屏東環球影城",
+    "provider": "atmovies",
+    "aliases": [
+      "國賓屏東環球影城",
+      "國賓屏東環球",
+      "屏東國賓",
+      "屏東環球國賓"
+    ],
+    "sourceNames": [
+      "國賓屏東環球影城"
+    ],
+    "theaterCode": "t08703",
+    "areaCode": "a87",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t08703/a87/",
+    "bookingUrl": "http://www.ambassador.com.tw/home",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  },
+  {
+    "id": "atmovies-t08902",
+    "brand": "秀泰",
+    "city": "台東",
+    "county": "台東縣",
+    "district": "",
+    "name": "台東秀泰影城",
+    "provider": "atmovies",
+    "aliases": [
+      "台東秀泰影城",
+      "台東秀泰",
+      "秀泰"
+    ],
+    "sourceNames": [
+      "台東秀泰影城"
+    ],
+    "theaterCode": "t08902",
+    "areaCode": "a89",
+    "sourceUrl": "https://www.atmovies.com.tw/showtime/t08902/a89/",
+    "bookingUrl": "https://www.showtimes.com.tw/events?corpId=7",
+    "websiteFromDirectory": true,
+    "availability": "verified"
+  }
+]

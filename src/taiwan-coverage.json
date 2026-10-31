@@ -1,0 +1,30 @@
+{
+  "verifiedOn": "2026-10-26",
+  "directoryUrl": "https://www.atmovies.com.tw/showtime/",
+  "directoryCount": 108,
+  "structuredCount": 102,
+  "imageOnlyCount": 6,
+  "areaCount": 18,
+  "counties": [
+    "南投縣",
+    "台中市",
+    "台北市",
+    "台南市",
+    "台東縣",
+    "嘉義市",
+    "基隆市",
+    "宜蘭縣",
+    "屏東縣",
+    "彰化縣",
+    "新北市",
+    "新竹市",
+    "新竹縣",
+    "桃園市",
+    "澎湖縣",
+    "花蓮縣",
+    "苗栗縣",
+    "金門縣",
+    "雲林縣",
+    "高雄市"
+  ]
+}

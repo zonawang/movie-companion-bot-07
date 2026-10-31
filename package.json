@@ -1,0 +1,49 @@
+{
+  "name": "movie-companion-bot-07",
+  "version": "0.7.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.13.0",
+    "npm": ">=11.8.0"
+  },
+  "scripts": {
+    "start": "node src/server.mjs",
+    "chat": "node src/cli.mjs",
+    "demo": "node examples/offline-demo.mjs",
+    "smoke:adk": "node examples/adk-smoke.mjs",
+    "smoke:tmdb": "node examples/tmdb-smoke.mjs",
+    "smoke:cinema": "node examples/cinema-smoke.mjs",
+    "test": "node --test test/*.test.mjs",
+    "smoke:cinemas": "node examples/multi-cinema-smoke.mjs",
+    "smoke:cinemas:adk": "node examples/multi-cinema-adk-smoke.mjs",
+    "smoke:cinemas:all": "node examples/all-vieshow-smoke.mjs",
+    "smoke:cinemas:national:adk": "node examples/national-vieshow-adk-smoke.mjs",
+    "smoke:cinemas:taiwan": "node examples/all-taiwan-cinemas-smoke.mjs",
+    "smoke:cinemas:taiwan:adk": "node examples/taiwan-cinemas-adk-smoke.mjs",
+    "smoke:maps": "node examples/maps-smoke.mjs",
+    "smoke:maps:adk": "node examples/maps-adk-smoke.mjs",
+    "smoke:maps:adk:fixture": "MAPS_SMOKE_FIXTURE=1 node examples/maps-adk-smoke.mjs",
+    "preview": "node scripts/preview.mjs",
+    "test:browser": "node scripts/browser-qa.mjs",
+    "richmenu:plan": "node scripts/richmenu.mjs plan",
+    "richmenu:inspect": "node scripts/richmenu.mjs inspect",
+    "richmenu:apply": "node scripts/richmenu.mjs apply",
+    "richmenu:rollback": "node scripts/richmenu.mjs rollback",
+    "smoke:richmenu:adk": "node examples/richmenu-adk-smoke.mjs",
+    "preview:flex": "node scripts/flex-preview.mjs",
+    "test:flex:browser": "node scripts/flex-browser-qa.mjs",
+    "smoke:flex:adk": "node examples/flex-adk-smoke.mjs",
+    "smoke:schedule:recovery": "node examples/schedule-recovery-smoke.mjs",
+    "smoke:ticket-photo:adk": "node examples/ticket-photo-adk-smoke.mjs"
+  },
+  "dependencies": {
+    "@google/adk": "2.3.0",
+    "cheerio": "^1.2.0",
+    "dotenv": "^17.0.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}
