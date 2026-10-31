@@ -71,3 +71,5 @@ npm run smoke:ticket-photo:adk
 2. 當輪結束後，`InMemoryRunner` 記憶體中的 `inlineData` 圖片位元組已清除為 `0`。
 3. 同一段 Session 接著輸入文字「我是跟小安一起看的，心得是最後一段鼓聲太震撼了」，成功更新草稿並通過逐字心得校驗。
 4. 缺少日期的票根圖片不會觸發 `prepare_ticket`，而是主動詢問缺少的觀影日期。
+
+大巨蛋秀泰當日晚間場次來源與驗證，見 [大巨蛋場次恢復](docs/dome-recovery.md)。

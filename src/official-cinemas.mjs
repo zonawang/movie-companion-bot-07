@@ -4,6 +4,7 @@ import { normalizeName } from './cinema-registry.mjs';
 const dateValid = value => /^\d{4}-\d{2}-\d{2}$/.test(value) && !Number.isNaN(Date.parse(value)) && new Date(value).toISOString().slice(0, 10) === value;
 const timeValid = value => /^(?:[01]\d|2[0-3]):[0-5]\d$/.test(value);
 const configs = {
+  'atmovies-t02a13': { type: 'showtime', name: '大巨蛋秀泰影城', url: 'https://www.showtimes.com.tw/cinemas/91/', source: '秀泰影城官方公開場次頁' },
   'atmovies-t04411': { type: 'showtime', name: '台中文心秀泰影城', url: 'https://www.showtimes.com.tw/cinemas/56/', source: '秀泰影城官方公開場次頁' },
   'atmovies-t02d02': { type: 'ambassador', name: '台北長春國賓影城', id: '453b2966-f7c2-44a9-b2eb-687493855d0e', url: 'https://www.ambassador.com.tw/home/Showtime?ID=453b2966-f7c2-44a9-b2eb-687493855d0e', source: '國賓影城官方公開時刻表' },
   'atmovies-t06902': { type: 'in89', name: '澎湖昇恆昌in89豪華影城', id: '1', url: 'https://www.in89cinemax.com/film_list.aspx?TheaterId=14', api: 'https://penghu.in89.com.tw/api/api_movie.php?method=getStagesByDate', source: 'in89 官方公開場次資料' },
@@ -16,8 +17,9 @@ function add(rows, date, title, version, time, detailUrl) {
 function safeLink(value, base, path) {
   try { const url = new URL(value, base); return url.origin === new URL(base).origin && path.test(url.pathname) ? url.href : null; } catch { return null; }
 }
-export function parseShowtimeOfficial(html) {
-  const config = configs['atmovies-t04411'], $ = load(html);
+export function parseShowtimeOfficial(html, cinemaId = 'atmovies-t04411') {
+  const config = configs[cinemaId]; if (!config || config.type !== 'showtime') throw new Error('Unknown cinema');
+  const $ = load(html);
   if (!$('h1').toArray().some(el => normalizeName($(el).text().trim()) === normalizeName(config.name))) throw new Error('Wrong cinema');
   const anchors = $('script[type="application/ld+json"]').map((_,el) => {
     try { const body = JSON.parse($(el).text()); return body['@type'] === 'ScreeningEvent' && typeof body.startDate === 'string' ? body.startDate.slice(0,10) : null; } catch { return null; }
@@ -111,7 +113,7 @@ export class OfficialCinemaSource {
       try{while(true){const {done,value}=await reader.read();if(done)break;bytes+=value.length;if(bytes>2000000){await reader.cancel();throw new Error('Official response too large');}chunks.push(Buffer.from(value));}}finally{reader.releaseLock();}
       const raw=Buffer.concat(chunks).toString('utf8');
       let parsed;
-      try{parsed=config.type==='showtime'?parseShowtimeOfficial(raw):config.type==='ambassador'?parseAmbassadorOfficial(raw):parseIn89Official(JSON.parse(raw));}
+      try{parsed=config.type==='showtime'?parseShowtimeOfficial(raw,id):config.type==='ambassador'?parseAmbassadorOfficial(raw):parseIn89Official(JSON.parse(raw));}
       catch{throw Object.assign(new Error('Unrecognized official data'),{kind:'format'});}
       const page={...parsed,fetched:this.now().valueOf(),sourceUrl:config.type==='ambassador'?key:config.url};
       if(this.cache.size>=50)this.cache.delete(this.cache.keys().next().value);this.cache.set(key,page);return page;

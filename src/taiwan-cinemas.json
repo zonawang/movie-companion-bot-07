@@ -109,8 +109,8 @@
     "theaterCode": "t02a13",
     "areaCode": "a02",
     "sourceUrl": "https://www.atmovies.com.tw/showtime/t02a13/a02/",
-    "bookingUrl": "https://www.showtimes.com.tw/info/cinema/91",
-    "websiteFromDirectory": true,
+    "bookingUrl": "https://www.showtimes.com.tw/cinemas/91/",
+    "websiteFromDirectory": false,
     "availability": "verified"
   },
   {

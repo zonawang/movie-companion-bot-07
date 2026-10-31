@@ -1,5 +1,6 @@
 import { EsliteSource, taipeiDateTime } from './eslite.mjs';
 import { AtmoviesSource, validDate, validTime } from './atmovies.mjs';
+import { TwshowtimesSource } from './twshowtimes.mjs';
 import { OfficialCinemaSource, officialCinemaUrl } from './official-cinemas.mjs';
 import { findCinema, matchCinemas, normalizeName } from './cinema-registry.mjs';
 export { parseEsliteSchedule, taipeiDateTime } from './eslite.mjs';
@@ -8,8 +9,9 @@ export { listCinemas, formatCinemaList } from './cinema-registry.mjs';
 const titleKey = value => normalizeName(value).replace(/[\p{P}\p{S}]/gu, '');
 
 export class CinemaSource {
-  constructor({ fetcher, now = () => new Date(), eslite, atmovies, official } = {}) {
+  constructor({ fetcher, now = () => new Date(), eslite, atmovies, official, thirdParty } = {}) {
     this.now = now;
+    this.thirdParty = thirdParty === null ? null : thirdParty || new TwshowtimesSource({ ...(fetcher ? { fetcher } : {}), now });
     this.official = official === null ? null : official || new OfficialCinemaSource({ ...(fetcher ? { fetcher } : {}), now });
     this.eslite = eslite || new EsliteSource({ ...(fetcher ? { fetcher } : {}), now });
     this.atmovies = atmovies || new AtmoviesSource({ ...(fetcher ? { fetcher } : {}), now });
@@ -40,6 +42,11 @@ export class CinemaSource {
       if (fallback && fallback.status !== 'unavailable') result = { ...fallback, fallbackFrom: { status: result.status, sourceDate: result.sourceDate, failure: result.failure }, fallbackNotice: '開眼當日資料無法使用，已改查這間影城的官方公開場次。' };
       else result = { ...result, bookingUrl: officialCinemaUrl(branch.id), websiteFromDirectory: false, officialFallback: fallback?.failure, fallbackNotice: (fallback?.failure?.httpStatus === 403 ? '官方網站拒絕伺服器存取，暫時無法取得場次' : '官方備援也暫時無法核對') + (fallback?.failure?.httpStatus ? `（HTTP ${fallback.failure.httpStatus}）` : '') + '，請直接開啟影城官網確認。' };
     }
+    if (['unavailable', 'stale_source', 'not_published', 'links_only'].includes(result.status) && this.thirdParty?.supports(branch.id)) {
+      const fallback = await this.thirdParty.schedule(branch, { date, afterTime: lowerBound, onlyUpcoming });
+      if (fallback && fallback.status !== 'unavailable') result = { ...fallback, fallbackFrom: { status: result.status, sourceDate: result.sourceDate, failure: result.failure, officialFailure: result.officialFallback }, fallbackNotice: '開眼與官方來源暫時無法取得可核對的場次，已改查場次通（第三方整理，可能延遲）。' };
+      else result = { ...result, thirdPartyFallback: fallback?.failure, fallbackNotice: [result.fallbackNotice, fallback?.message].filter(Boolean).join('\n') };
+    }
     if (result.status !== 'ok' || !movieTitle) return result;
     // 僅作片名文字篩選，保留來源原片名與版本；不讓模型替不確定的片名配對。
     const movies = result.movies.filter(movie => titleKey(movie.title).includes(titleKey(movieTitle)));
@@ -65,11 +72,11 @@ export function formatCinemaSchedule(result, { maxChars = 3200 } = {}) {
     const time = taipeiDateTime(new Date(result.fetchedAt));
     footer.push(`讀取時間：${time.date} ${time.time}（台灣時間）`);
   }
-  if (result.sourceUrl) footer.push(`${result.provider === 'atmovies' ? '來源時刻表' : '官方時刻表'}：${result.sourceUrl}`);
+  if (result.sourceUrl) footer.push(`${['atmovies', 'twshowtimes'].includes(result.provider) ? '來源時刻表' : '官方時刻表'}：${result.sourceUrl}`);
   if (result.bookingUrl) footer.push(`${result.websiteFromDirectory ? '影城網站（來源頁提供）' : '官方訂票／核對'}：${result.bookingUrl}`);
   if (result.imageUrl) footer.push(`來源圖片時刻表：${result.imageUrl}`);
   if (result.fallbackNotice) footer.push(result.fallbackNotice);
-  if (result.sourceUrl) footer.push(result.provider === 'atmovies' ? '第三方資料可能延遲或缺少版本；場次與售票以影城為準。' : '場次與售票異動以官網為準。');
+  if (result.sourceUrl) footer.push(['atmovies', 'twshowtimes'].includes(result.provider) ? '第三方資料可能延遲或缺少版本；場次與售票以影城為準。' : '場次與售票異動以官網為準。');
   if (result.status === 'ok') {
     lines.push(result.afterTime ? `以下為 ${result.afterTime} 起的場次：` : '以下為來源目前列出的場次：');
     if (result.movieTitle) lines.push(`片名篩選：${result.movieTitle}（請核對作品與版本）`);

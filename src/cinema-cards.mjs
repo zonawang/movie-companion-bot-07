@@ -6,7 +6,7 @@ const text = (value, options = {}) => ({ type: 'text', text: String(value || '�
 const box = (contents, options = {}) => ({ type: 'box', layout: 'vertical', contents, ...options });
 const button = (label, data, primary = false) => ({ type: 'button', height: 'sm', style: primary ? 'primary' : 'secondary', ...(primary ? { color: '#243D34' } : {}), action: { type: 'postback', label, data } });
 const safeSource = value => {
-  try { const url = new URL(value); return url.protocol === 'https:' && ['meet.eslite.com', 'arthouse.eslite.com', 'www.atmovies.com.tw', 'www.showtimes.com.tw', 'www.ambassador.com.tw', 'www.in89cinemax.com'].includes(url.hostname) && !url.username && !url.password ? url.href : ''; }
+  try { const url = new URL(value); return url.protocol === 'https:' && ['meet.eslite.com', 'arthouse.eslite.com', 'www.atmovies.com.tw', 'www.showtimes.com.tw', 'www.ambassador.com.tw', 'www.in89cinemax.com', 'twshowtimes.com'].includes(url.hostname) && !url.username && !url.password ? url.href : ''; }
   catch { return ''; }
 };
 const action = (verb, token, index) => `flex:${verb}:${token}:${index}`;
@@ -58,7 +58,7 @@ export class CinemaCards {
     lines.push(`第 ${page + 1}/${Math.ceil(count / PAGE_SIZE)} 頁・${count} 部電影／影城組合，左右滑動查看。`);
     lines.push('點「電影介紹」了解內容，或看完整場次。');
     if (snapshot.total > count) lines.push('候選較多，先提供前 150 筆，其餘請指定分館或見來源。');
-    lines.push(snapshot.sources.some(source => source.provider === 'atmovies') ? '含開眼第三方資料，可能延遲；場次、版本與售票以影城為準。' : '場次與售票異動以影城為準。');
+    lines.push(snapshot.sources.some(source => ['atmovies', 'twshowtimes'].includes(source.provider)) ? '含第三方時刻表，可能延遲；場次、版本與售票以影城為準。' : '場次與售票異動以影城為準。');
     lines.push('按鈕 10 分鐘內有效，保留本次查詢資料。');
     if (snapshot.items.some(item => item.versions.some(version => version.times.some(time => time < '06:00')))) lines.push('凌晨場依來源日期列出，實際入場日期請向影城確認。');
     if (snapshot.failures.length) lines.push(...snapshot.failures);

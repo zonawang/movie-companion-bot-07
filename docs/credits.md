@@ -38,6 +38,7 @@ This product uses the TMDB API but is not endorsed or certified by TMDB.
 
 開眼回傳舊日期、無法讀取或查無有效當日場次時，以下分館會使用獨立核對的官方公開資料：
 
+- [大巨蛋秀泰官方場次表](https://www.showtimes.com.tw/cinemas/91/)：核對大巨蛋分館名稱、日期及版本；不與文心分館混用。
 - [台中文心秀泰官方場次表](https://www.showtimes.com.tw/cinemas/56/)：讀取頁面顯示的所有日期與版本；JSON-LD 只作年份依據，避免被前一百個事件的截斷範圍限制。
 - [台北長春國賓官方時刻表](https://www.ambassador.com.tw/home/Showtime?ID=453b2966-f7c2-44a9-b2eb-687493855d0e)：帶入查詢日期，核對分館 UUID 與實際選中的日期。
 - [澎湖 in89 官方電影時刻](https://www.in89cinemax.com/film_list.aspx?TheaterId=14)：使用該公開頁面載入的 `getStagesByDate` 只讀資料，核對專用主機、影城識別與名稱；無須登入、cookie 或會員 session。
@@ -67,3 +68,7 @@ Bot 03 透過 Google Maps Platform Places API (New) 的 Text Search 與 Nearby S
 - [Google Maps Places API](https://developers.google.com/maps/documentation/places/web-service/overview)
 - [Google Maps 來源標示規範](https://developers.google.com/maps/documentation/places/web-service/policies)
 - [使用條款](terms.md) 與 [隱私說明](privacy.md)
+
+## 大巨蛋秀泰的場次通備援（2026-10-31）
+
+大巨蛋在開眼與官方頁無法提供有效資料時，讀取[場次通的大巨蛋分館公開片單](https://twshowtimes.com/cinemas/showtimes-dajudan/)。場次通是獨立的第三方整理者，與秀泰無隸屬關係；回覆明確保留其名稱、來源連結、實際頁面日期、讀取時間及可能延遲的提醒。不稱其為官方 API 或官方更新時間，訂票與臨時異動仍以秀泰為準。詳見[場次通介紹](https://twshowtimes.com/about/)與[本次修正](dome-recovery.md)。
