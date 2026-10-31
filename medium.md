@@ -1,12 +1,14 @@
-# 散場後拍一張電影票根：我如何用 Google ADK 多模態把 LINE 照片變成待確認的觀影草稿
+# 散場後拍一張電影票根：用 Google ADK 多模態把 LINE 照片變成待確認的觀影草稿
 
-剛從電影院走出來、手裡還拿著紙本票根或手機電子票截圖的時候，其實就是最想把這場電影收進票匣的瞬間。
+[上一篇](https://github.com/zonawang/movie-companion-bot-06-flex-message/blob/main/medium.md)，我用 Google ADK 搭配 LINE Flex Message，把原本一長串的影城場次整理成可以左右滑動、點看介紹與換批瀏覽的電影卡片，同時也補齊了松菸誠品與大巨蛋秀泰等影城的場次來源備援。
 
-但在這個瞬間，如果你還要打開鍵盤、一個字一個字輸入片名、把日期換算成 `YYYY-MM-DD`、再打上完整的影院名稱，很多人走進捷運站之前就放棄了。
+挑選電影與查場次的畫面變好讀之後，我回頭注意到散場後的另一個使用情境。
 
-在前面的篇章裡，我們已經用 **Google ADK（Agent Development Kit）** 打造了能理解自然語言的觀影夥伴：使用者可以用文字記票、透過 `prepare_ticket` 工具建立待確認草稿，確認無誤後才寫入 SQLite 私人票匣，並用 LINE Rich Menu 與 Flex Message 瀏覽全台影城場次。
+剛從電影院走出來、手裡還拿著紙本票根或手機購票截圖的時候，其實就是最想把這場電影收進票匣的瞬間。
 
-這一篇（Bot 07），我想解決散場後最自然的這個動作：**直接用 LINE 拍一張電影票根傳給機器人，讓 Google ADK 幫你讀出片名、日期與影院，直接整理成一張待確認草稿。**
+但在這個瞬間，如果要打開鍵盤、一個字一個字輸入片名、把日期換算成 `YYYY-MM-DD`、再打上完整的影院名稱，很多人走進捷運站之前就懶得記了。
+
+這篇記錄 Bot 07 完成的部分：**沿用同一個 Google ADK 架構，接住 LINE 傳來的電影票根照片，透過多模態輸入辨識片名、觀影日期與影院，自動呼叫既有的 `prepare_ticket` 工具建立待確認草稿，並支援接著用文字補上同伴與個人心得。**
 
 ![拍一張電影票根：Google ADK 如何把圖片變成待確認草稿](https://raw.githubusercontent.com/zonawang/movie-companion-bot-07/main/docs/images/01-ticket-photo-adk-flow.png)
 
@@ -14,83 +16,99 @@
 
 ## 為什麼不另外接一套傳統 OCR，而是直接交給 Google ADK？
 
-一聽到「拍票根存紀錄」，最直覺的做法往往是在外面另外接一套獨立的 OCR 文字辨識服務，讀出文字後直接塞進資料庫。
+一想到「拍票根存紀錄」，最直覺的做法往往是在對話流程外面另外接一套獨立的 OCR 文字辨識服務，讀出文字後直接塞進資料庫。
 
-但只要拿幾張真實的電影票根試過，就會發現三個很棘手的問題。
+但實際拿電影票根思考整個流程，就會發現三個問題：
 
-第一，每家戲院的票根排版都不一樣。有的把年份寫在斜線後面，有的同時印了中英文片名與分級標示，純文字規則很容易抓錯欄位。
+1. **每家戲院的票根排版都不一樣**：有的把年份印在斜線後面，有的同時印了中英文片名、廳別與分級標示，單靠固定座標或正則規則很容易抓錯欄位。
+2. **辨識錯字不能直接寫進正式收藏**：票面反光、折痕或陰影都可能造成辨識誤差；如果沒經過使用者確認就直接寫進 SQLite，私人票匣很快就會出現錯誤紀錄。
+3. **票根照片上只有「客觀事實」，沒有「主觀記憶」**：票根上印著片名、日期與戲院，但不會印你是跟哪位朋友一起看的，也不會印你散場時心裡那句最真實的感想。
 
-第二，如果辨識完直接寫入資料庫，一旦反光或折痕造成錯字，使用者的私人收藏就會馬上被髒資料污染。
+這正是 **Google ADK（Agent Development Kit）** 最能發揮價值的地方。
 
-第三，也是最重要的一點：**票根照片上只有「客觀事實」，沒有「主觀記憶」。**
+在 Google ADK 的架構裡，我們不需要為了「拍照記票」另外造一條繞過 Agent 的旁門左道。
 
-票根上印著《進擊的鼓手》、印著 `2026-10-31`、印著「松菸誠品電影院」，但票根上不會印你是跟哪位朋友一起看的，也不會印你散場時心裡那句最真實的感動。
+我們可以直接把票根圖片轉成多模態輸入（`inlineData`），送進原本就負責管家的 **`LlmAgent`** 與 **`InMemoryRunner`**，讓它去呼叫同一顆 **`prepare_ticket`（`FunctionTool`）**。
 
-這正是 **Google ADK** 最派得上用場的地方。
+```text
+使用者在 LINE 傳送電影票根照片
+        ↓
+Webhook 驗簽、檢查 5 MB 上限與 JPG/PNG/WebP 檔案魔數
+        ↓
+Google ADK InMemoryRunner 送入 inlineData 圖片與辨識提示
+        ↓
+LlmAgent 讀出片名、日期、影院 → 呼叫 prepare_ticket 工具
+        ↓
+建立 10 分鐘待確認草稿（同伴與心得強制留空）並清除對話記憶體中的大圖
+        ↓
+使用者直接點「確認儲存票根」，或接著打字補上同伴與心得
+```
 
-因為在 Google ADK 的架構下，我們不需要把「拍照記票」做成一條脫離對話的旁門左道。
-
-我們可以把票根照片當成多模態輸入（`inlineData`），直接送進同一個 **Google ADK `LlmAgent`** 與 **`InMemoryRunner`**，讓它呼叫原本就已經有嚴格護欄的 **`prepare_ticket`（`FunctionTool`）**。
-
-這樣一來，無論使用者是「打字記票」還是「拍票根記票」，最後都會走進同一套「先建草稿、按鈕確認後才寫入 SQLite」的安全流程，而且拍完照還能接著用文字補上同伴與心得。
+這樣一來，無論使用者是「打字記票」還是「拍票根記票」，最後都會走進同一套「先建草稿、按鈕確認後才寫入 SQLite」的安全流程。
 
 ---
 
-## Google ADK 的三個核心設計：多模態輸入、工具護欄與兩輪協作
+## 把票根照片放進 Google ADK，清楚切開每個欄位的責任
 
-為了讓「拍票根」既聰明又不會亂編資料，我們在 Google ADK 上設計了三個關鍵環節。
+為了讓 Google ADK 讀懂票根、卻又不會把票面雜訊當成個人筆記，我把圖片辨識時每個欄位的處理方式收斂成這張表：
 
-### 1. `InMemoryRunner` 多模態輸入：把票根照片轉成結構化欄位
+| 票根草稿欄位 | 拍照回合（Image Turn）的處理方式 | 為什麼這樣設計 |
+| --- | --- | --- |
+| 電影名稱（`movieTitle`） | 由 Google ADK 從票面清楚可見的文字提取 | 省去手動打字，特別是片名很長的時候 |
+| 觀影日期（`watchedOn`） | 由 Google ADK 轉為 `YYYY-MM-DD`；若缺少年份或日期則不呼叫工具 | 確保日期格式一致，看不清楚時不亂猜今天 |
+| 影院名稱（`cinema`） | 提取票面上的戲院或影城名稱；看不出來則留空 | 自動記下是在哪間戲院看的 |
+| 同伴（`companions`） | **程式強制鎖定為空字串** | 票根上不會印同行朋友，留給後續文字補充 |
+| 個人心得（`note`） | **程式強制鎖定為空字串** | 防止把廳別、座位或票面標語當成私人心得 |
 
-當使用者在 LINE 一對一聊天室傳送一張照片時，Webhook 會先檢查 LINE 簽章、限制圖片大小在 5 MB 以內，並用檔案開頭的魔數（Magic Bytes）確認它是真正的 JPG、PNG 或 WebP 圖檔，同時拒絕外部網址圖片以防止異常請求。
-
-接著，我們把圖片轉成 Google ADK 支援的 `inlineData` 結構，連同明確的辨識指引一起送進 `InMemoryRunner.runAsync`。
-
-我們拿這張內建的《進擊的鼓手》測試票根來實際跑一次：
+我們拿專案內建的《進擊的鼓手》測試票根來實際跑一次：
 
 ![內建測試票根樣本：進擊的鼓手](https://raw.githubusercontent.com/zonawang/movie-companion-bot-07/main/assets/sample-ticket.png)
 
-Google ADK 的 `LlmAgent` 收到這張圖片後，不需要我們手寫座標裁切規則，就能直接從票面上看懂三個核心欄位：
+當這張圖片透過 `InMemoryRunner.runAsync` 送進 Google ADK 後，`LlmAgent` 會直接讀出：
 
-- **電影名稱（`movieTitle`）**：`進擊的鼓手`
-- **觀影日期（`watchedOn`）**：`2026-10-31`
-- **影院名稱（`cinema`）**：`松菸誠品電影院`
+- **電影**：`進擊的鼓手`
+- **日期**：`2026-10-31`
+- **影院**：`松菸誠品電影院`
 
-辨識完成後，`LlmAgent` 會自動決定呼叫 `prepare_ticket` 工具，在 SQLite 裡產生一筆 10 分鐘有效的待確認草稿，並在 LINE 回覆確認卡片與「確認儲存票根／取消」按鈕。
+接著自動觸發 `prepare_ticket`，在 LINE 聊天室回傳待確認草稿與「確認儲存票根／取消」按鈕。
 
 ---
 
-### 2. `FunctionTool` 邊界：絕不把票面印刷字當成你的私人心得
+## `FunctionTool` 的邊界：不把票面印刷字當成你的心得，看不清楚也不硬猜
 
-做票根圖片辨識時，很容易踩到一個隱形地雷。
+做票根圖片辨識時，很容易遇到兩個邊界狀況。
 
-電影票根上除了片名、日期和戲院，還印了非常多雜訊文字，例如「A 廳 5 排 12 號」、「全票 NT$300」、「入場存根聯」，或是底下的「本券限當日當場次有效，開演後恕不退換」。
+第一個狀況，是電影票根上除了片名、日期和戲院，還印了非常多額外文字。
+
+例如「A 廳 5 排 12 號」、「全票 NT$300」、「入場存根聯」，或是底下的「本券限當日當場次有效，開演後恕不退換」。
 
 如果只靠提示詞叮囑模型，模型偶爾還是會「太熱心」，把廳別、座位號碼或票面警語塞進 `note`（個人心得）欄位裡。
 
 為了守住私人收藏的乾淨度，我們直接在 **Google ADK 的 `prepare_ticket` 工具層**加上硬性規則：
 
-> **只要當輪輸入是票根圖片（Image Turn），程式就會強制把 `companions`（同伴）與 `note`（個人心得）鎖定為空字串。**
+> **只要當輪輸入是票根圖片，程式就會強制把 `companions`（同伴）與 `note`（個人心得）重設為空字串。**
 
-也就是說，圖片回合唯一允許模型填入的，只有票面上看得見的客觀資訊（片名、日期、影院）。
+也就是說，圖片回合唯一允許模型填入的，只有票面上看得見的客觀資訊（片名、日期、影院）。就算票面上印了再多標語或座位資訊，也絕對不可能溜進你的私人心得欄位。
 
-就算票面上印了再多標語或座位資訊，也絕對不可能溜進你的私人心得欄位。
+第二個狀況，是如果使用者拍到的票根切掉了下半部的日期，或是反光看不清楚怎麼辦？
 
-那如果使用者傳了一張切掉下半部日期的模糊票根呢？
+我們另外準備了一張裁切掉日期區塊的對照票根（`assets/sample-ticket-missing-date.png`）做測試。
 
-我們同樣在提示詞與測試裡驗證了這個邊界：當圖片上看不到完整的西元觀影日期時，Google ADK 的 `LlmAgent` **不會硬猜今天日期，也不會呼叫 `prepare_ticket`**，而是老實告訴使用者：「我看得到片名是《進擊的鼓手》、影院是松菸誠品電影院，但缺少觀影日期，請補充日期後我再幫你建立草稿。」
+當圖片上看不到完整的西元觀影日期時，Google ADK 的 `LlmAgent` **不會硬猜今天日期，也不會呼叫 `prepare_ticket`**，而是老實回覆使用者：
+
+> 「這張圖片上可以看到片名是《進擊的鼓手》、影院是松菸誠品電影院，但缺少完整的觀影日期。請補充觀影日期（例如 `YYYY-MM-DD`），我再幫你建立票根草稿！」
 
 ---
 
-### 3. 第一輪拍票根、第二輪打字補心得：`InMemoryRunner` 的兩輪協作
+## 第一輪拍票根、第二輪打字補心得：`InMemoryRunner` 的兩輪協作
 
-這是我自己在實測時最喜歡的一個體驗。
+在 LINE 真機上測試時，我自己最喜歡的是「先拍照、再補一句話」的兩輪互動。
 
-當你第一輪傳送《進擊的鼓手》票根照片，機器人幫你建好包含片名、日期、影院的草稿後，如果你這時候想把同伴跟剛看完的感想一起記下來，你完全不需要重頭再打一次片名跟日期。
+當你第一輪傳送票根照片，Google ADK 幫你建好包含片名、日期、影院的草稿後，如果你這時候想把同伴跟剛看完的感想一起記下來，你完全不需要重頭再打一次片名跟日期。
 
-你只要接著在 LINE 裡打一句話：
+你只要接著在 LINE 聊天室打一句話：
 
-> **「我是跟小安一起看的，心得是最後一段鼓聲太震撼了」**
+> **我是跟小安一起看的，心得是最後一段鼓聲太震撼了**
 
 因為 **Google ADK 的 `InMemoryRunner`** 保存了這段對話的工具呼叫脈絡，`LlmAgent` 馬上就知道這句話是在補充剛剛那張《進擊的鼓手》票根。
 
@@ -100,9 +118,46 @@ Google ADK 的 `LlmAgent` 收到這張圖片後，不需要我們手寫座標裁
 
 ![第一輪拍票根、第二輪補心得：InMemoryRunner 的兩輪協作](https://raw.githubusercontent.com/zonawang/movie-companion-bot-07/main/docs/images/02-ticket-photo-two-turns.png)
 
-同時，為了避免這張幾 MB 的高畫質票根照片一直留在對話記憶裡，拖慢後面每一輪聊天的速度，我們在圖片回合結束的瞬間，就用 `scrubSessionImages` 把 `InMemoryRunner` 歷史事件裡的原始圖片位元組清掉，只留下輕量的文字標記與工具紀錄。
+---
 
-這樣既保住了多輪對話的上下文，又不會浪費記憶體與頻寬，原始票根照片也不會落地存進硬碟或資料庫。
+## 讀完就清掉記憶體裡的大圖：讓多輪對話保持輕快
+
+把圖片送進 `InMemoryRunner` 還有一個實務細節要處理。
+
+使用者隨手拍的票根照片，動輒就是 1 到 3 MB 的圖檔。如果這串 Base64 圖片資料一直留在 `InMemoryRunner` 的對話歷史事件（Session Events）裡，那使用者後面每聊一句話，就等於要把這張大圖重新上傳給模型一次，既拖慢速度又佔記憶體。
+
+因此，我們在 [`src/ticket-photo.mjs`](https://github.com/zonawang/movie-companion-bot-07/blob/main/src/ticket-photo.mjs) 裡實作了 `scrubSessionImages`：
+
+- 當圖片回合的 `runner.runAsync` 一結束，程式會立刻巡檢當前 Session 的歷史事件，把 `inlineData` 原始圖片位元組替換成一句輕量的文字標記。
+- 同時保留 `prepare_ticket` 的工具呼叫結果，讓下一輪文字追問依然看得到剛剛辨識出的片名、日期與影院。
+- 原始票根圖片既不寫入硬碟、也不寫進 SQLite，讀完即釋放。
+
+---
+
+## 這次驗證到哪裡
+
+完成票根拍照辨識並合併大巨蛋秀泰場次恢復後，全專案自動測試來到 **133 項，全部通過**。
+
+除了單元測試與內建的 `npm run smoke:ticket-photo:adk` 真實模型冒煙測試外，我們也將 Bot 07 部署上 Google Compute Engine 正式機，直接在手機 LINE 的 **Zona Movie（`@796qcwyz`）** 聊天室完成真人實測：
+
+```text
+Oct 31 10:17:45 movie-bot-03: Sending out request, model: gemini-3.5-flash-lite
+Oct 31 10:17:47 movie-bot-03: [ADK tool] prepare_ticket
+Oct 31 10:18:32 movie-bot-03: Sending out request, model: gemini-3.5-flash-lite
+Oct 31 10:18:33 movie-bot-03: [ADK tool] prepare_ticket
+```
+
+從雲端日誌可以清楚看到：第一輪傳送票根照片約 2 秒即觸發 `prepare_ticket` 回傳草稿；接著用文字補上同伴與心得，約 1 秒即完成第二次 `prepare_ticket` 草稿更新。
+
+| 驗證項目 | 這次確認的內容 |
+| --- | --- |
+| LINE 圖片下載與格式防護 | 僅讀取 LINE 託管圖片（拒絕外部網址）、限制 5 MB 上限、以檔案魔數驗證 JPG / PNG / WebP |
+| Google ADK 多模態辨識 | 真實 Gemini + `InMemoryRunner` 從票根照片讀出片名、`YYYY-MM-DD` 日期與影院並呼叫 `prepare_ticket` |
+| 印刷字污染防護 | 圖片回合強制將 `companions` 與 `note` 設為空字串，廳別、座位與票面警語不會混入私人心得 |
+| 殘缺票根防呆 | 傳送裁切掉日期的票根圖片時，不呼叫 `prepare_ticket`，主動詢問缺少的觀影日期 |
+| 兩輪協作與逐字心得 | 第一輪傳圖、第二輪打字補同伴與心得可無縫更新草稿，且保留逐字心得比對與舊草稿自動取消 |
+| 記憶體圖片清理 | 當輪結束後 Session 內 `inlineData` 數量歸零，不落地儲存原始票根照片 |
+| 原有功能與場次恢復 | Flex Message 電影卡片、Rich Menu、Published MINI App 票匣與大巨蛋秀泰場次恢復全數相容通過 |
 
 ---
 
@@ -116,7 +171,13 @@ Google ADK 的 `LlmAgent` 收到這張圖片後，不需要我們手寫座標裁
 
 ---
 
-### 專案連結
+## 完整程式碼與參考資料
 
-- **GitHub 原始碼（Bot 07）**：[https://github.com/zonawang/movie-companion-bot-07](https://github.com/zonawang/movie-companion-bot-07)
-- **票根拍照辨識技術文件**：[`docs/ticket-photo.md`](https://github.com/zonawang/movie-companion-bot-07/blob/main/docs/ticket-photo.md)
+- [這次的電影夥伴專案：movie-companion-bot-07](https://github.com/zonawang/movie-companion-bot-07)
+- [上一篇｜從一長串場次，到一張張電影卡片：用 Google ADK 與 LINE Flex Message，讓電影夥伴更好讀](https://github.com/zonawang/movie-companion-bot-06-flex-message/blob/main/medium.md)
+- [Zona Movie LINE 入口](https://line.me/R/ti/p/@796qcwyz)
+- [正式票匣（LINE MINI App）](https://miniapp.line.me/2012222034-AVyO2nk3)
+- [票根圖片驗證與記憶體清理：`src/ticket-photo.mjs`](https://github.com/zonawang/movie-companion-bot-07/blob/main/src/ticket-photo.mjs)
+- [Google ADK 多模態與工具護欄：`src/agent.mjs`](https://github.com/zonawang/movie-companion-bot-07/blob/main/src/agent.mjs)
+- [票根拍照辨識技術說明：`docs/ticket-photo.md`](https://github.com/zonawang/movie-companion-bot-07/blob/main/docs/ticket-photo.md)
+- [大巨蛋場次恢復說明：`docs/dome-recovery.md`](https://github.com/zonawang/movie-companion-bot-07/blob/main/docs/dome-recovery.md)
