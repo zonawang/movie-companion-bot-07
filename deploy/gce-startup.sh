@@ -5,7 +5,7 @@ export DEBIAN_FRONTEND=noninteractive
 metadata() { curl -fsS --retry 3 -H 'Metadata-Flavor: Google' "http://metadata.google.internal/computeMetadata/v1/instance/attributes/$1"; }
 app_project="$(metadata app-project)"
 app_release="$(metadata app-release)"
-app_repository="$(metadata app-repository || printf zonawang/movie-companion-bot-06-flex-message)"
+app_repository="$(metadata app-repository || printf zonawang/movie-companion-bot-07)"
 [[ "$app_repository" =~ ^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$ ]]
 [[ "$app_release" =~ ^[0-9a-f]{40}$ ]]
 app_domain="$(metadata app-domain)"
@@ -61,7 +61,7 @@ os.chmod(path,0o600)
 PY
 cat > /etc/systemd/system/movie-bot.service <<'UNIT'
 [Unit]
-Description=Movie Companion Bot 06 Flex Message
+Description=Movie Companion Bot 07 Ticket Photo
 After=network-online.target
 Wants=network-online.target
 
@@ -122,7 +122,7 @@ chmod 644 /etc/systemd/system/movie-bot-backup.service /etc/systemd/system/movie
 cat > /etc/caddy/Caddyfile <<CADDY
 ${app_domain} {
     encode gzip
-    header X-Movie-Bot-Version "06"
+    header X-Movie-Bot-Version "07"
     @api path /health /webhook /tickets /tickets/* /api/*
     handle @api {
         reverse_proxy 127.0.0.1:3002
@@ -134,7 +134,7 @@ ${app_domain} {
         redir https://github.com/${app_repository}/blob/main/docs/terms.md 302
     }
     handle {
-        respond "Movie Companion Bot 06 Flex Message" 200
+        respond "Movie Companion Bot 07 Ticket Photo" 200
     }
 }
 CADDY
@@ -143,4 +143,4 @@ caddy validate --config /etc/caddy/Caddyfile
 systemctl daemon-reload
 systemctl enable movie-bot caddy movie-bot-backup.timer
 systemctl restart movie-bot caddy movie-bot-backup.timer
-printf 'Movie Bot 06 provisioning completed.\n'
+printf 'Movie Bot 07 provisioning completed.\n'
